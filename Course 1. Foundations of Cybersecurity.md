@@ -119,7 +119,7 @@ The eight CISSP domains gave an idea organize a security analyst's responsibilit
 ### 5. Understanding Threat Actors
 
 <p align="center">
-  <img src="images/threat-actors.svg" alt="Threat actor types" width="560"/>
+  <img src="images/attacker-types.png" alt="Threat actor types" width="560"/>
 </p>
 
 - **Advanced persistent threats (APTs)** - highly skilled actors who research large targets in advance and can remain undetected for a long time, often aiming to damage infrastructure or steal intellectual property.
