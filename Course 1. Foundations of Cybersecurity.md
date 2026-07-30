@@ -137,7 +137,7 @@ I also learned that "hacker" is a broad term, and that intent is what separates 
 ### 6. Controls, Frameworks, and Compliance
 
 <p align="center">
-  <img src="images/cia-triad.svg" alt="CIA Triad diagram" width="480"/>
+  <img src="images/CIA.png" alt="CIA Triad diagram" width="480"/>
 </p>
 
 The **CIA triad** is the model used to reason about risk when systems and policies are designed. It informs the **security controls** put in place, which work alongside **security frameworks** to meet **compliance** requirements. A framework is built around four components: identifying and documenting security goals, setting guidelines to reach them, implementing strong security processes, and monitoring and communicating results. Two related concepts I picked up here are **security architecture** (the tools and processes used to protect against risk) and **security governance** (the practices that support and direct an organization's security efforts).
