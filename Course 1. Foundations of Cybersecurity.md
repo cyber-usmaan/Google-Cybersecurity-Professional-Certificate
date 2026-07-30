@@ -12,10 +12,8 @@ This is the first course of the Google Cybersecurity Certificate. Through it, I 
 ## Certificate
 
 <p align="center">
-  <img src="images/certificate-placeholder.svg" alt="Certificate placeholder" width="480"/>
+  <img src="images/Google Cert 1 Foundations of CyberSecurity-1.png" alt="Certificate placeholder" width="480"/>
 </p>
-
-> Replace the image above with my earned certificate (e.g. `images/certificate.png`) once added to this repository.
 
 ---
 
@@ -188,19 +186,15 @@ I was introduced to the toolkit an entry-level analyst typically relies on:
 - Foundational cybersecurity terminology and concepts
 - Applying the CIA triad to risk-based decisions
 - Recognizing security frameworks, controls, and compliance obligations
-- Identifying phishing, malware, and social engineering attack patterns
-- Mapping attacks to the eight CISSP security domains
+- Identifying attack patterns and mapping attacks to the eight CISSP security domains
 - Profiling threat actors and their motivations
-- Making ethical, legally sound decisions as a security professional
-- Working knowledge of SIEM tools, packet analyzers, and IDS
-- Following incident response playbooks and chain-of-custody procedures
-- Basic exposure to Python, SQL, and Linux
-- Understanding encryption and penetration testing at a conceptual level
+- Making ethical and legal decisions as a security professional
+- Following incident response playbooks and chain-of-custody proceduresl
 - Communication, problem-solving, time management, and a growth mindset
 
 ## Key Learnings and Reflections
 
-Completing this course gave me a mental map of the cybersecurity field before I go deeper into any single tool or technique. A few things stood out to me:
+Completing this course gave me a mental map of the cybersecurity field before I go deeper into any single tool or technique. A few things that stood out were:
 
 - Most successful attacks exploit **people**, not just technology - which is why ethics and communication are treated as core skills, not extras.
 - Frameworks, controls, and compliance are three distinct but connected layers, and I now know where each one fits.
