@@ -76,10 +76,6 @@ Started by building a working vocabulary of the field. These are the terms I now
 - **Vishing** - exploits voice communication to obtain information or impersonate a source.
 - **Smishing** - uses text messages for the same purpose.
 
-<p align="center">
-  <img src="images/malware-types.svg" alt="Types of malware" width="560"/>
-</p>
-
 **Malware** is software designed to harm devices or networks, usually for financial or intelligence gain:
 
 - **Viruses** - malicious code that requires a user to open an infected file before it spreads.
