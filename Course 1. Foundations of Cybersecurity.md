@@ -65,7 +65,7 @@ Started by building a working vocabulary of the field. These are the terms I now
 ### 3. Common Attacks and Why They Work
 
 <p align="center">
-  <img src="images/phishing-types.svg" alt="Types of phishing attacks" width="560"/>
+  <img src="images/types-of-phishing-attacks.jpg" alt="Types of phishing attacks" width="560"/>
 </p>
 
 **Phishing** is the use of digital communications to trick people into revealing sensitive data or installing malicious software. The variants I learned to distinguish:
