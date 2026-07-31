@@ -1,6 +1,6 @@
 # Google Cybersecurity Professional Certificate - Coursera [Status: inprogress]
 Purpose of the Repository:
-Documentating of coursework, key learnings, and projects completed as part of this certification.
+Documentating coursework, key learnings, and projects completed as part of this certification.
 
 ---
 
