@@ -1,6 +1,6 @@
 # Google Cybersecurity Professional Certificate - Coursera [Status: inprogress]
 Purpose of the Repository:
-Documentation of coursework, key learnings, and projects completed as part of this certification.
+Documentating of coursework, key learnings, and projects completed as part of this certification.
 
 ---
 
@@ -9,6 +9,9 @@ Documentation of coursework, key learnings, and projects completed as part of th
 Courses and their module covered in the certificate.
 
 ### 1. Foundations of Cybersecurity:
+
+[Visit Course 1 Overview and Certificate](https://github.com/cyber-usmaan/Google-Cybersecurity-Professional-Certificate/blob/main/Course%201.%20Foundations%20of%20Cybersecurity.md)
+
 4 Modules are:
 - Introduction to Cybersecurity
 - Evolution of Cybersecurity
@@ -16,6 +19,9 @@ Courses and their module covered in the certificate.
 - Cybersecurity tools and Programming Languages
 
 ### 2. Manage Security Risks:
+
+[Visit Course 2 Overview and Certificate](https://github.com/cyber-usmaan/Google-Cybersecurity-Professional-Certificate/blob/main/Course%202.%20Manage%20Security%20Risks.md)
+
 4 Modules are:
 - Security Domains
 - Security Frameworks and Controls
