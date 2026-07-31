@@ -15,8 +15,6 @@ This is the second course of the Google Cybersecurity Certificate. Building on t
   <img src="images/certificate-placeholder.svg" alt="Certificate placeholder" width="480"/>
 </p>
 
-> Replace the image above with my earned certificate (e.g. `images/certificate.png`) once added to this repository.
-
 ---
 
 ## Modules Covered
@@ -32,7 +30,7 @@ This is the second course of the Google Cybersecurity Certificate. Building on t
 
 ### 1. The Eight CISSP Security Domains
 
-I learned that the CISSP's eight security domains give me a way to organize the full scope of a security analyst's responsibilities - from policy down to code.
+I learned that the CISSP's eight security domains give me a way to organize the full scope of a security analyst's responsibilities, from policy down to code.
 
 <p align="center">
   <img src="images/cissp-domains.svg" alt="Eight CISSP security domains" width="640"/>
@@ -49,20 +47,20 @@ I learned that the CISSP's eight security domains give me a way to organize the 
 
 ### 2. Managing Threats, Risks, and Vulnerabilities
 
-I learned to separate three terms that are often used interchangeably but describe different things:
+learned to separate three terms that are often used interchangeably but describe different things:
 
 - **Threat** - any circumstance or event that can negatively impact an asset (for example, an insider threat or an advanced persistent threat).
 - **Risk** - anything that can affect the confidentiality, integrity, or availability of an asset; broadly, risk is a function of how likely a threat is to occur.
 - **Vulnerability** - a weakness that a threat can exploit.
 
-To manage risk, I learned four core strategies:
+To manage risk, there are four core strategies:
 
 - **Acceptance** - accepting a risk to avoid disrupting business continuity.
 - **Avoidance** - creating a plan that avoids the risk altogether.
 - **Transference** - shifting the risk to a third party to manage.
 - **Mitigation** - lessening the impact of a known risk.
 
-Organizations pair these strategies with frameworks such as the **NIST Risk Management Framework (RMF)** and **HITRUST**. I also learned some of the factors that drive risk (external actors, internal staff or vendors, legacy systems, multiparty outsourcing, and software licensing gaps), along with a few real-world vulnerabilities worth recognizing:
+Organizations pair these strategies with frameworks such as the **NIST Risk Management Framework (RMF)** and **HITRUST**. Also learned some of the factors that drive risk (external actors, internal staff or vendors, legacy systems, multiparty outsourcing, and software licensing gaps), along with a few real-world vulnerabilities worth recognizing:
 
 | Vulnerability | What It Affects |
 |---|---|
@@ -74,13 +72,13 @@ Organizations pair these strategies with frameworks such as the **NIST Risk Mana
 
 ### 3. Frameworks and Controls
 
-I now distinguish between the two: **frameworks** are the guidelines used to build a risk-mitigation plan, while **controls** are the specific safeguards used to carry that plan out. In this module I was introduced to the **Cyber Threat Framework (CTF)**, which gives analysts a common language for describing threat activity, and **ISO/IEC 27001**, an internationally recognized framework for managing the security of assets such as financial data, intellectual property, and employee records.
+**frameworks** are the guidelines used to build a risk-mitigation plan, while **controls** are the specific safeguards used to carry that plan out. I was introduced to the **Cyber Threat Framework (CTF)**, which gives analysts a common language for describing threat activity, and **ISO/IEC 27001**, an internationally recognized framework for managing the security of assets such as financial data, intellectual property, and employee records.
 
 <p align="center">
   <img src="images/controls-categories.svg" alt="Physical, technical, and administrative controls" width="640"/>
 </p>
 
-Controls fall into three categories, and I learned to recognize examples of each:
+Controls fall into three categories, and learned to recognize examples of each:
 
 - **Physical controls** - gates, fences, locks, security guards, CCTV, and access badges.
 - **Technical controls** - firewalls, multi-factor authentication, and antivirus software.
@@ -107,10 +105,11 @@ The NIST CSF organizes an organization's cybersecurity work into five ongoing fu
 - **Detect** - recognize suspicious activity as it happens.
 - **Respond** - contain, analyze, and resolve a security incident.
 - **Recover** - restore normal operations and strengthen defenses for next time.
+- **Govern** - implement security protocols in administrative level, and address concerns to stakeholders
 
 ### 6. OWASP Security Principles
 
-I built on the OWASP principles introduced earlier with four additional ones. Together, these ten principles now guide how I think about secure design:
+I built on the OWASP principles introduced earlier with four additional ones. Together, these ten principles now guide how to think about secure design:
 
 - **Minimize attack surface area** - reduce the number of potential entry points a threat actor could exploit.
 - **Principle of least privilege** - grant only the access required to complete a task.
@@ -125,7 +124,7 @@ I built on the OWASP principles introduced earlier with four additional ones. To
 
 ### 7. Security Audits
 
-I learned that a **security audit** is an independent review of an organization's controls, policies, and procedures against internal and external criteria (regulatory compliance, laws, and federal regulations). Audits are shaped by the organization's industry, size, location, and applicable regulations, and frameworks like the NIST CSF and ISO 27000 series make audits easier to prepare for.
+**security audit** is an independent review of an organization's controls, policies, and procedures against internal and external criteria (regulatory compliance, laws, and federal regulations). Audits are shaped by the organization's industry, size, location, and applicable regulations, and frameworks like the NIST CSF and ISO 27000 series make audits easier to prepare for.
 
 Building an audit generally follows the same checklist:
 
@@ -137,7 +136,7 @@ Building an audit generally follows the same checklist:
 
 ### 8. SIEM Tools in Practice
 
-I learned that a **SIEM tool** collects and analyzes log data in real time to help a security team monitor an organization's activity, though it still requires a human to interpret the results. SIEM tools are evolving toward **cloud-hosted** and **cloud-native** deployments, and are increasingly paired with **SOAR** (security orchestration, automation, and response) to automate routine responses and free up analysts for more complex incidents.
+**SIEM tool** collects and analyzes log data in real time to help a security team monitor an organization's activity, though it still requires a human to interpret the results. SIEM tools are evolving toward **cloud-hosted** and **cloud-native** deployments, and are increasingly paired with **SOAR** (security orchestration, automation, and response) to automate routine responses and free up analysts for more complex incidents.
 
 I explored two SIEM platforms and their dashboards:
 
@@ -151,7 +150,7 @@ Each dashboard serves a different purpose, from real-time threat monitoring to g
 - **Open-source tools** are publicly available, often free, and can be modified by their users - for example, **Linux** (an open-source operating system) and **Suricata** (open-source network analysis and threat detection software).
 - **Proprietary tools** are owned by a company, typically require a paid license, and can only be modified by the owner - Splunk and Chronicle are both examples.
 
-I also learned that open-source tools aren't inherently less secure; wide visibility into the source code often means issues are found and fixed faster.
+Learned that open-source tools aren't inherently less secure; wide visibility into the source code often means issues are found and fixed faster.
 
 ### 10. Playbooks in Action
 
@@ -162,11 +161,8 @@ A **playbook** is a manual that defines the steps a team follows for a specific 
 ## Skills Gained
 
 - Organizing security responsibilities using the eight CISSP domains
-- Distinguishing threats, risks, and vulnerabilities
-- Applying risk management strategies: acceptance, avoidance, transference, mitigation
 - Recognizing physical, technical, and administrative controls
-- Applying the CIA triad to real analyst tasks
-- Working with the NIST CSF's five functions
+- Working with the NIST CSF's six functions
 - Applying OWASP security principles to design decisions
 - Planning and scoping a security audit
 - Evaluating SIEM platforms and their dashboards (Splunk, Chronicle)
@@ -175,7 +171,7 @@ A **playbook** is a manual that defines the steps a team follows for a specific 
 
 ## Key Learnings and Reflections
 
-This course shifted my focus from vocabulary to structure - how the pieces I learned in Course 1 actually fit into an organization's day-to-day risk management. A few things stood out to me:
+This course shifted my focus from vocabulary to structure. How the pieces I learned in Course 1 actually fit into an organization's day-to-day risk management. A few things stood out to me:
 
 - The eight CISSP domains gave me a mental filing system for every topic that follows in the rest of the certificate.
 - Frameworks and controls are not interchangeable - a framework sets the plan, and controls carry it out.
@@ -184,4 +180,4 @@ This course shifted my focus from vocabulary to structure - how the pieces I lea
 
 ## Conclusion
 
-Course 2 gave me a structural understanding of how organizations manage security risk - through domains, frameworks, controls, and the tools that support them. I now have a clearer picture of where a specific task fits within the bigger picture of an organization's security program, which sets up the next course's deeper focus on cybersecurity tools.
+This Course gave me a structural understanding of how organizations manage security risk, through domains, frameworks, controls, and the tools that support them. I now have a clearer picture of where a specific task fits within the bigger picture of an organization's security program, which sets up the next course's deeper focus on cybersecurity tools.
