@@ -12,7 +12,7 @@ This is the second course of the Google Cybersecurity Certificate. Building on t
 ## Certificate
 
 <p align="center">
-  <img src="images/certificate-placeholder.svg" alt="Certificate placeholder" width="480"/>
+  <img src="images/Google Cert 2 Manage Security Risks.png" alt="Certificate placeholder" width="480"/>
 </p>
 
 ---
@@ -30,11 +30,11 @@ This is the second course of the Google Cybersecurity Certificate. Building on t
 
 ### 1. The Eight CISSP Security Domains
 
-I learned that the CISSP's eight security domains give me a way to organize the full scope of a security analyst's responsibilities, from policy down to code.
-
 <p align="center">
-  <img src="images/cissp-domains.svg" alt="Eight CISSP security domains" width="640"/>
+  <img src="images/CISSP Domains.png" alt="Eight CISSP security domains" width="640"/>
 </p>
+
+I learned that the CISSP's eight security domains give me a way to organize the full scope of a security analyst's responsibilities, from policy down to code.
 
 - **Security and risk management** - sets security goals, risk mitigation processes, compliance, business continuity, legal regulations, and organizational ethics.
 - **Asset security** - manages the storage, maintenance, retention, and destruction of physical and virtual data.
@@ -47,7 +47,11 @@ I learned that the CISSP's eight security domains give me a way to organize the 
 
 ### 2. Managing Threats, Risks, and Vulnerabilities
 
-learned to separate three terms that are often used interchangeably but describe different things:
+<p align="center">
+  <img src="images/Threats Risks and Vulnerability.png" alt="Eight CISSP security domains" width="640"/>
+</p>
+
+Learned to separate three terms that are often used interchangeably but describe different things:
 
 - **Threat** - any circumstance or event that can negatively impact an asset (for example, an insider threat or an advanced persistent threat).
 - **Risk** - anything that can affect the confidentiality, integrity, or availability of an asset; broadly, risk is a function of how likely a threat is to occur.
@@ -72,11 +76,7 @@ Organizations pair these strategies with frameworks such as the **NIST Risk Mana
 
 ### 3. Frameworks and Controls
 
-**frameworks** are the guidelines used to build a risk-mitigation plan, while **controls** are the specific safeguards used to carry that plan out. I was introduced to the **Cyber Threat Framework (CTF)**, which gives analysts a common language for describing threat activity, and **ISO/IEC 27001**, an internationally recognized framework for managing the security of assets such as financial data, intellectual property, and employee records.
-
-<p align="center">
-  <img src="images/controls-categories.svg" alt="Physical, technical, and administrative controls" width="640"/>
-</p>
+**Frameworks** are the guidelines used to build a risk-mitigation plan, while **controls** are the specific safeguards used to carry that plan out. I was introduced to the **Cyber Threat Framework (CTF)**, which gives analysts a common language for describing threat activity, and **ISO/IEC 27001**, an internationally recognized framework for managing the security of assets such as financial data, intellectual property, and employee records.
 
 Controls fall into three categories, and learned to recognize examples of each:
 
@@ -86,7 +86,11 @@ Controls fall into three categories, and learned to recognize examples of each:
 
 ### 4. Applying the CIA Triad as an Analyst
 
-Course 1 introduced the CIA triad; here I learned how each element plays out day to day:
+<p align="center">
+  <img src="images/CIA Triad.png" alt="Eight CISSP security domains" width="640"/>
+</p>
+
+Course 1 introduced the CIA triad; here it was taught that how each element plays out day to day:
 
 - **Confidentiality** is reinforced through the **principle of least privilege**, limiting users to only the access their role requires.
 - **Integrity** is verified through **cryptography** and **encryption**, which convert data into a format that can't be read or tampered with by unauthorized parties.
@@ -94,10 +98,10 @@ Course 1 introduced the CIA triad; here I learned how each element plays out day
 
 ### 5. The NIST Cybersecurity Framework (CSF)
 
-The NIST CSF organizes an organization's cybersecurity work into five ongoing functions:
+The NIST CSF organizes an organization's cybersecurity work into Six ongoing functions:
 
 <p align="center">
-  <img src="images/nist-csf-functions.svg" alt="NIST CSF five functions" width="720"/>
+  <img src="images/NIST CSF.png" alt="NIST CSF five functions" width="720"/>
 </p>
 
 - **Identify** - know which systems, data, and assets exist.
@@ -108,6 +112,10 @@ The NIST CSF organizes an organization's cybersecurity work into five ongoing fu
 - **Govern** - implement security protocols in administrative level, and address concerns to stakeholders
 
 ### 6. OWASP Security Principles
+
+<p align="center">
+  <img src="images/OSWAP top 10.webp" alt="NIST CSF five functions" width="720"/>
+</p>
 
 I built on the OWASP principles introduced earlier with four additional ones. Together, these ten principles now guide how to think about secure design:
 
@@ -124,7 +132,7 @@ I built on the OWASP principles introduced earlier with four additional ones. To
 
 ### 7. Security Audits
 
-**security audit** is an independent review of an organization's controls, policies, and procedures against internal and external criteria (regulatory compliance, laws, and federal regulations). Audits are shaped by the organization's industry, size, location, and applicable regulations, and frameworks like the NIST CSF and ISO 27000 series make audits easier to prepare for.
+**Security audit** is an independent review of an organization's controls, policies, and procedures against internal and external criteria (regulatory compliance, laws, and federal regulations). Audits are shaped by the organization's industry, size, location, and applicable regulations, and frameworks like the NIST CSF and ISO 27000 series make audits easier to prepare for.
 
 Building an audit generally follows the same checklist:
 
