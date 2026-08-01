@@ -1,5 +1,5 @@
 ![Course](https://img.shields.io/badge/Course%201-Foundations%20of%20Cybersecurity-4285F4)
-![Status](https://img.shields.io/badge/Status-Completed-1a73e8)
+![Status](https://img.shields.io/badge/Status-Completed-4EEB2A)
 
 # Course 1: Foundations of Cybersecurity
 
