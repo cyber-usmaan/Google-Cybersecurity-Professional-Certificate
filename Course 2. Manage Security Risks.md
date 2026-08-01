@@ -1,5 +1,5 @@
 ![Course](https://img.shields.io/badge/Course%202-Manage%20Security%20Risks-4285F4)
-![Status](https://img.shields.io/badge/Status-Completed-1a73e8)
+![Status](https://img.shields.io/badge/Status-Completed-4EEB2A)
 
 # Course 2: Manage Security Risks
 
