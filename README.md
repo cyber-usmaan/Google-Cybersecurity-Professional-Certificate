@@ -30,7 +30,7 @@ Writeup for each Course and its module breakdown, in the certificate.
 
 ### 3. Connect and Protect: Network and Network Security
 
-[Visit Course 3 writeup and Certificate[](https://github.com/cyber-usmaan/Google-Cybersecurity-Professional-Certificate/edit/main/Course%203.%20Network%20and%20Network%20Security.md)
+[Visit Course 3 writeup and Certificate](https://github.com/cyber-usmaan/Google-Cybersecurity-Professional-Certificate/edit/main/Course%203.%20Network%20and%20Network%20Security.md)
 
 There are 4 modules in this course:
 - Network Architecture
