@@ -1,11 +1,12 @@
 ![Course](https://img.shields.io/badge/Course%201-Foundations%20of%20Cybersecurity-4285F4)
 ![Status](https://img.shields.io/badge/Status-Completed-4EEB2A)
 
-# Course 1: Foundations of Cybersecurity
+#  🛡️ Course 1: Foundations of Cybersecurity
 
 ## About This Course
+This course covers the core vocabulary of cybersecurity, the transferable/technical skills an analyst needs, the most common attack types and threat actors, the frameworks/controls/compliance landscape, the ethics that guide security decisions, and the everyday tools analysts use.
 
-This is the first course of the Google Cybersecurity Certificate. Through it, I learned that cybersecurity is the practice of ensuring the confidentiality, integrity, and availability of information by protecting networks, devices, people, and data from unauthorized access or criminal exploitation. This course introduced me to the terminology, mindset, and foundational knowledge used across the cybersecurity profession.
+I learned that cybersecurity is the practice of ensuring the confidentiality, integrity, and availability of information by protecting networks, devices, people, and data from unauthorized access or criminal exploitation. This course introduced me to the terminology, mindset, and foundational knowledge used across the cybersecurity profession.
 
 ---
 
@@ -28,175 +29,241 @@ There are 4 modules in this course:
 
 ## What I Learned
 
-### 1. Core Concepts and Key Terms
+## 1. What Cybersecurity Actually Means
 
-Started by building a working vocabulary of the field. These are the terms I now use to reason about risk:
-
-- **Asset** - anything perceived as having value to an organization.
-- **Threat** - any circumstance or event that can negatively impact an asset.
-- **Compliance** - adhering to internal standards and external regulations; it helps an organization avoid fines and breaches.
-- **Security frameworks** - guidelines for building plans that mitigate risk to data and privacy.
-- **Security controls** - safeguards designed to reduce specific security risks, used alongside frameworks.
-- **Security posture** - an organization's ability to manage its defense of critical assets and react to change.
-- **Threat actor** - any person or group who presents a security risk to computers, applications, networks, or data.
-- **Internal threat** - a current or former employee, vendor, or trusted partner who poses a risk, whether accidental or intentional.
-- **Network security** - keeping an organization's network infrastructure secure from unauthorized access.
-- **Cloud security** - ensuring cloud-stored assets are properly configured and accessible only to authorized users.
-- **Programming** - writing instructions for a computer to execute tasks such as automating repetitive work, reviewing web traffic, and alerting on suspicious activity.
-
-### 2. Skill for Cybersecurity
-
-**Transferable skills**
-
-- **Communication** - explaining security issues clearly to both technical and non-technical audiences.
-- **Problem-solving** - recognizing attack patterns and choosing an efficient, sometimes imperfect, response.
-- **Time management** - prioritizing the most urgent issue to minimize damage.
-- **Growth mindset** - staying willing to learn as the field and its tools evolve.
-- **Diverse perspectives** - valuing different viewpoints to reach better security solutions.
-
-**Technical skills**
-
-- **Programming languages** - automating repetitive analysis and threat searches.
-- **SIEM tools** - collecting and analyzing log data to monitor an organization's activity.
-- **Intrusion detection systems (IDS)** - monitoring systems and alerting on possible intrusions.
-- **Threat landscape knowledge** - staying current on threat actor tactics and emerging malware.
-- **Incident response** - following established procedures to investigate and remediate an incident.
-
-### 3. Common Attacks and Why They Work
+Before this course, I thought of "cybersecurity" mostly as antivirus software and firewalls. What I now understand is that cybersecurity is really the **practice of protecting the confidentiality, integrity, and availability (CIA)** of an organization's data - across its networks, devices, people, and processes, from unauthorized access or exploitation.
 
 <p align="center">
-  <img src="images/Phishing-Types-Infographic-1536x1344.png" alt="Types of phishing attacks" width="560"/>
+  <img src="images/CIA.png" width="300"/>
 </p>
 
-**Phishing** is the use of digital communications to trick people into revealing sensitive data or installing malicious software. The variants I learned to distinguish:
+That CIA framing matters because it's the lens through which almost everything else in the course makes sense:
+- **Confidentiality** - only the right people can see the data.
+- **Integrity** - the data hasn't been tampered with.
+- **Availability** - the data/systems are there when legitimate users need them.
 
-- **Business Email Compromise (BEC)** - impersonates a known source to gain a financial advantage.
-- **Spear phishing** - targets a specific user or group, appearing to come from a trusted source.
-- **Whaling** - a form of spear phishing aimed at company executives.
-- **Vishing** - exploits voice communication to obtain information or impersonate a source.
-- **Smishing** - uses text messages for the same purpose.
+Every control, framework, and law discussed later in the course is ultimately trying to protect one (or more) of these three pillars.
 
-**Malware** is software designed to harm devices or networks, usually for financial or intelligence gain:
+### Core terms I needed to internalize
 
-- **Viruses** - malicious code that requires a user to open an infected file before it spreads.
-- **Worms** - self-replicate and spread across a network without user action.
-- **Ransomware** - encrypts an organization's data and demands payment for its release.
-- **Spyware** - gathers and sells personal data without consent.
-
-**Social engineering** exploits human error rather than technical flaws:
-
-- **Social media phishing** - gathers details from a target's social profiles before attacking.
-- **Watering hole attack** - compromises a website a specific group frequently visits.
-- **USB baiting** - leaves an infected USB drive for someone to plug in.
-- **Physical social engineering** - impersonates an employee, customer, or vendor to gain physical access.
-
-These attacks **succeed** as they lean on predictable human responses: 
-- **Authority** (respecting a perceived figure of power)
-- **Intimidation** (bullying a target into compliance)
-- **Consensus** (implying "everyone else already agreed")
-- **Scarcity** (implying limited availability)
-- **Familiarity** (faking a personal connection)
-- **Trust** (building a relationship to exploit later)
-- **Urgency** (rushing a decision before it can be questioned)
-
-### 4. CISSP Security Domains and Attack Types
-
-The eight CISSP domains gave an idea organize a security analyst's responsibilities and map each attack type to the area of the business it threatens most:
-
-| Attack Type | What It Targets | Related CISSP Domain |
-|---|---|---|
-| Password attack | Password-secured devices, systems, or data | Communication and Network Security |
-| Social engineering attack | Human trust and judgment | Security and Risk Management |
-| Physical attack | Physical environments and hardware | Asset Security |
-| Adversarial artificial intelligence | AI/ML systems, used to attack more efficiently | Communication and Network Security; Identity and Access Management |
-| Supply-chain attack | Vulnerabilities introduced by third parties | Security and Risk Management; Security Architecture and Engineering; Security Operations |
-| Cryptographic attack | Secure communication between sender and recipient | Communication and Network Security |
-
-### 5. Understanding Threat Actors
-
-<p align="center">
-  <img src="images/attacker-types.png" alt="Threat actor types" width="560"/>
-</p>
-
-- **Advanced persistent threats (APTs)** - highly skilled actors who research large targets in advance and can remain undetected for a long time, often aiming to damage infrastructure or steal intellectual property.
-- **Insider threats** - people who abuse access they are already authorized to have, motivated by sabotage, corruption, espionage, or data leaks.
-- **Hacktivists** - driven by a political agenda, using digital tools for demonstrations, propaganda, or social change campaigns.
-
-I also learned that "hacker" is a broad term, and that intent is what separates the categories:
-
-- **Authorized (ethical) hackers** - follow a code of ethics and the law to evaluate organizational risk.
-- **Semi-authorized hackers** - researchers who find vulnerabilities but do not exploit them.
-- **Unauthorized (unethical) hackers** - malicious actors who break the law for financial gain.
-- **New and unskilled threat actors** - motivated by learning, revenge, or exploiting known vulnerabilities with existing tools.
-- **Vigilante hackers** - act on their own, outside law enforcement, aiming to counter unethical hackers.
-
-### 6. Controls, Frameworks, and Compliance
-
-<p align="center">
-  <img src="images/CIA.png" alt="CIA Triad diagram" width="480"/>
-</p>
-
-The **CIA triad** is the model used to reason about risk when systems and policies are designed. It informs the **security controls** put in place, which work alongside **security frameworks** to meet **compliance** requirements. A framework is built around four components: identifying and documenting security goals, setting guidelines to reach them, implementing strong security processes, and monitoring and communicating results. Two related concepts I picked up here are **security architecture** (the tools and processes used to protect against risk) and **security governance** (the practices that support and direct an organization's security efforts).
-
-Also reviewed the major regulations and frameworks a security professional should recognize:
-
-| Framework / Regulation | Focus Area |
+| Term | My understanding |
 |---|---|
-| NIST CSF / RMF | Voluntary U.S. frameworks for managing cybersecurity risk |
-| FERC-NERC | Protection of the U.S./North American power grid |
-| FedRAMP | Standardized security assessment for cloud services (U.S. federal) |
-| CIS Controls | Nonprofit-issued controls to safeguard systems and networks |
-| GDPR | Protects the data and privacy rights of E.U. residents |
-| PCI DSS | Secures credit card storage, processing, and transmission |
-| HIPAA | Protects U.S. patients' health information (PHI) |
-| ISO | International standards for technology and management |
-| SOC 1 / SOC 2 | Reports on an organization's access controls and financial compliance |
+| **Security posture** | An organization's overall ability to defend its assets and respond to change - basically, "how ready are we?" |
+| **Security framework** | A structured guideline for building a plan to reduce risk (identify goals → set guidelines → implement processes → monitor results). |
+| **Security control** | A specific safeguard (technical or procedural) used *within* a framework to reduce a particular risk. Frameworks are the "plan," controls are the individual "tools" that execute the plan. |
+| **Compliance** | Following internal standards and external laws/regulations - this is what keeps an organization out of legal and financial trouble. |
+| **Threat actor** | Any person or group that poses a security risk - not always external; sometimes internal. |
+| **Internal threat** | A current/former employee, vendor, or partner who is a risk - sometimes accidental (e.g., clicking a phishing link), sometimes intentional. |
+| **Network security** vs **Cloud security** | Network security protects on-premise infrastructure; cloud security protects assets hosted on remote servers (data centers) accessed over the internet. As more companies move to the cloud, this second one is becoming just as critical as traditional network security. |
 
-### 7. Ethics in Cybersecurity Decisions
+**Example that made this click for me:** an employee accidentally clicking a malicious email link is an *internal threat*, but the email itself was sent by an *external threat actor* using *phishing*. This showed me that "internal vs external" is about **who caused the exposure**, not who the attacker is.
 
-I learned that **security ethics** - the guidelines for making appropriate decisions as a professional - it governs how far a defender can go when responding to an attack.
+---
 
-- In the **United States**, counterattacking a threat actor is illegal under laws such as the Computer Fraud and Abuse Act of 1986. Only approved federal or military personnel are permitted to counterattack; everyone else may only defend.
-- From an **international** standpoint, the International Court of Justice allows a counterattack only if it affects solely the original attacker, is a direct request to stop, does not escalate the situation, and its effects can be reversed - conditions that are difficult to guarantee in practice.
-- Beyond counterattacks, the ethical obligations tied to handling data: **confidentiality** (respecting privacy of assets and data), **privacy protection** (safeguarding **PII** and the more sensitive **SPII** from unauthorized use), and a general duty under the **law** to stay unbiased, transparent, invested in the work, and continually informed - illustrated well by HIPAA's requirement to notify patients after a breach of their health data.
+## 2. Skills an Analyst Actually Needs
 
-### 8. Tools
+I found it useful that the course separated skills into two buckets, because it reframed cybersecurity as *not purely technical* - a lot of the job is human.
 
-I was introduced to the toolkit an entry-level analyst typically relies on:
+### Transferable skills
+These aren't cybersecurity-specific, but they're what actually make an analyst effective day to day:
 
-- **SIEM tools** - collect and analyze log data, then surface alerts so an analyst doesn't have to manually sift through it.
-- **Network protocol analyzers (packet sniffers)** - capture and analyze traffic across a network.
-- **Playbooks** - manuals for operational actions. Two I focused on: the **chain of custody** playbook (documenting who held evidence and when) and the **protecting and preserving evidence** playbook (handling fragile, volatile data in the correct **order of volatility**, from most to least perishable).
-- **Programming** - Python for automation, and **SQL** for creating, interacting with, and querying databases.
-- **Operating systems** - Linux (open-source, command-line driven), macOS, and Windows, each with different use cases for an analyst.
-- **Web vulnerabilities** - flaws a threat actor can exploit, tracked industry-wide through the OWASP Top 10.
-- **Antivirus software** - detects and eliminates malware based on known patterns.
-- **Intrusion detection systems (IDS)** - scan network packets and alert on possible intrusions.
-- **Encryption** - converts readable plaintext into secure ciphertext so unauthorized users cannot read it.
-- **Penetration testing** - a simulated attack used to proactively find vulnerabilities before a real threat actor does.
+- **Communication** - translating a technical finding into something a non-technical stakeholder can act on.
+- **Problem-solving** - recognizing attack patterns and picking the most efficient (not necessarily "perfect") fix.
+- **Time management** - triaging: not every alert is equally urgent.
+- **Growth mindset** - the threat landscape changes constantly, so continuous learning isn't optional.
+- **Diverse perspectives** - different backgrounds catch different blind spots in a security plan.
+
+### Technical skills
+These require tool- and procedure-specific knowledge:
+
+| Skill/Tool | Why it matters |
+|---|---|
+| Programming (Python, SQL) | Automates repetitive tasks like scanning domain lists or querying a database, cutting down manual effort and human error. |
+| SIEM tools | Collect and analyze log data so an analyst isn't manually sifting through thousands of log entries. |
+| Intrusion Detection Systems (IDS) | Monitor activity and flag possible intrusions in near real time. |
+| Threat landscape knowledge | Staying current on attacker tactics (e.g., a new ransomware variant) so defenses evolve alongside attacks. |
+| Incident response | Following a defined process when something *does* go wrong, rather than improvising under pressure. |
+
+**My takeaway:** technical tools give an analyst *scale* (a SIEM can process what a human can't), while transferable skills give an analyst *judgment* (deciding what the SIEM's alerts actually mean and what to do about them). Neither works well without the other.
+
+---
+
+## 3. Common Attacks and Why They Work
+
+<p align="center">
+  <img src="images/Phishing-Types-Infographic-1536x1344.png" width="400"/>
+</p>
+
+### Phishing (the human-targeted email/message attacks)
+
+| Type | How it works |
+|---|---|
+| Business Email Compromise (BEC) | Impersonates a known/trusted source to request money or information. |
+| Spear phishing | Targets a specific person or group, appearing to come from someone they trust. |
+| Whaling | Spear phishing aimed specifically at executives. |
+| Vishing | Voice-based version - phone calls impersonating a trusted source. |
+| Smishing | Same idea, via text message. |
+
+### Malware (malicious software)
+
+| Type | Key distinguishing feature |
+|---|---|
+| Virus | Needs a user to trigger it (opening an attachment); then spreads within that system. |
+| Worm | Self-replicates and spreads across a network **without** user action - this is the key contrast with a virus. |
+| Ransomware | Encrypts an organization's data and demands payment to unlock it. |
+| Spyware | Silently collects information (emails, texts, location) without consent. |
+
+### Social engineering (exploiting people, not code)
+
+Social media phishing, watering hole attacks, USB baiting, and physical social engineering (impersonating an employee/vendor to get physical access) all fall under this umbrella. What ties them together is that they don't exploit a technical vulnerability - they exploit **human trust**.
+
+The course broke down *why* these work so well, and this was one of the more eye-opening parts for me:
+
+- **Authority** - people obey figures who seem to be "in charge."
+- **Intimidation** - bullying/pressure tactics.
+- **Consensus/social proof** - "everyone else already gave me access."
+- **Scarcity** - implying limited availability to force quick decisions.
+- **Familiarity** - building a fake relationship over time.
+- **Trust** - an emotional bond exploited later.
+- **Urgency** - rushing the victim so they skip their normal judgment.
+
+**Example connecting this to real life:** a "CEO fraud" BEC email works because it stacks *authority* (looks like it's from a senior exec) with *urgency* ("I need this wire transfer done in the next hour"). Recognizing that combination is often a faster red flag than trying to spot a technical fault in the email itself.
+
+### Other attack categories (mapped to CISSP domains)
+
+The course also tied attack types to the **8 CISSP security domains**, which helped me see that "attacks" aren't a random list - they're organized by *which part of the security program they threaten*.
+
+| Attack type | Example forms | CISSP domain |
+|---|---|---|
+| Password attack | Brute force, rainbow table | Communication & Network Security |
+| Social engineering | Phishing, vishing, smishing, BEC | Security & Risk Management |
+| Physical attack | Malicious USB cable/drive, card skimming | Asset Security |
+| Adversarial AI | AI/ML manipulated to attack more efficiently | Comm. & Network Security + Identity & Access Mgmt |
+| Supply-chain attack | Vulnerability introduced via a third-party vendor | Multiple domains |
+| Cryptographic attack | Birthday, collision, downgrade | Communication & Network Security |
+
+---
+
+## 4. Who's Behind the Attacks - Threat Actors
+
+<p align="center">
+  <img src="images/attacker-types.png" width="400"/>
+</p>
+
+| Actor type | Motivation |
+|---|---|
+| Advanced Persistent Threats (APTs) | Well-resourced, research targets in advance, can stay undetected for a long time; go after critical infrastructure or IP. |
+| Insider threats | Abuse *authorized* access - sabotage, corruption, espionage, or leaks. |
+| Hacktivists | Politically motivated - demonstrations, propaganda, social change. |
+| New/unskilled threat actors | Often just experimenting or seeking revenge, using existing malware/scripts rather than original tools. |
+
+And a separate classification for **hackers** based on ethics/legality:
+
+- **Authorized (ethical) hackers** - follow the law, conduct sanctioned risk evaluations.
+- **Semi-authorized hackers** - researchers who find vulnerabilities but don't exploit them.
+- **Unauthorized (unethical) hackers** - break the law for financial or malicious gain.
+
+**Why this distinction matters to me:** it reframes "hacker" as a neutral term describing a *skillset*, not a moral category. The ethics come from *what they do with it* - which sets up the whole "ethics in cybersecurity" section later in the course.
+
+---
+
+## 5. Frameworks, Controls & Compliance - How They Fit Together
+
+This was the section where I had to slow down the most, because the three terms (framework / control / compliance) sound similar but play very different roles:
+
+- A **framework** is the overall *plan* (four core steps: identify goals → set guidelines → implement processes → monitor results).
+- **Controls** are the individual *safeguards* used to execute that plan.
+- **Compliance** is proof that you're actually following external laws/regulations - and it's what keeps the organization out of legal/financial trouble.
+
+I think of it like building code for a house: the *framework* is the blueprint, *controls* are the actual materials and locks installed, and *compliance* is passing inspection against the legal building code.
+
+### Key frameworks, standards, and regulations I learned
+
+| Name | Focus area |
+|---|---|
+| **NIST CSF / RMF** | U.S. voluntary frameworks for managing cybersecurity risk broadly. |
+| **CIS Controls** | Nonprofit-provided, actionable safeguards to strengthen defense posture. |
+| **GDPR** | E.U. regulation protecting resident data/privacy - breach notification required within **72 hours**. |
+| **PCI DSS** | International standard for securely handling credit card data. |
+| **HIPAA** | U.S. law protecting patient health information (PHI); governed by Privacy, Security, and Breach Notification rules. |
+| **HITRUST** | Framework/assurance program that helps organizations meet HIPAA compliance. |
+| **ISO** | International standards for technology, manufacturing, and management. |
+| **SOC 1 / SOC 2** | Auditing reports assessing an organization's user-access policies and financial/data-safety compliance. |
+| **FERC-NERC** | U.S./North American regulation for organizations tied to the power grid. |
+| **FedRAMP** | Standardizes security assessment for U.S. federal cloud services. |
+
+**Why I'll remember HIPAA's 72-hour rule specifically:** it's a concrete, testable number that shows compliance isn't abstract - there are real deadlines with real consequences if a breach isn't reported in time.
+
+---
+
+## 6. Ethics - The Decisions Behind the Technology
+
+This section reframed cybersecurity for me as **not just a technical discipline but a legal and ethical one.**
+
+### Counterattacks aren't allowed (mostly)
+
+- **In the U.S.**, counterattacking a threat actor is illegal under laws like the Computer Fraud and Abuse Act (1986) - it's treated as vigilantism, and it can escalate the situation or trigger international consequences if the actor is state-sponsored. Only approved government/military personnel can do it.
+- **Internationally**, the ICJ allows a counterattack only under narrow conditions (it must target only the original attacker, be a direct request to stop, not escalate, and be reversible). In practice, organizations avoid it because those conditions are very hard to guarantee.
+
+**My interpretation:** this is essentially the same logic as physical self-defense law - you can defend, but retaliating in a way that goes beyond stopping the immediate threat crosses into a different (and punishable) category of action.
+
+### Core ethical obligations
+
+- **Confidentiality** as an ethical principle - respecting privacy, not just enforcing it technically.
+- **Privacy protection** - distinguishing between:
+  - **PII** (Personally Identifiable Information): name, phone number - anything that can identify someone.
+  - **SPII** (Sensitive PII): SSNs, credit card numbers - subject to stricter handling.
+- **Legal obligation** - remaining unbiased, transparent, evidence-based, and continuously improving one's own skills to keep up with the threat landscape.
+
+**Example tying it together:** HIPAA isn't just "a law I have to follow" - it's also an *ethical* commitment, because failing to notify a patient of a breach of their PHI isn't only illegal, it directly harms a real person's privacy and safety.
+
+---
+
+## 7. Tools of the Trade
+
+| Tool | Purpose |
+|---|---|
+| **SIEM** (Security Information & Event Management) | Collects and analyzes log data, reducing the manual burden of reviewing logs and providing alerts via dashboards. Can be cloud-hosted (easier to set up) or on-premise. |
+| **Network protocol analyzer (packet sniffer)** | Captures and analyzes network traffic data. |
+| **Playbooks** | Manuals detailing the exact steps to take for a specific operational task, such as incident response. |
+| **Programming (Python, SQL)** | Automates repetitive analyst tasks and lets analysts query/manage databases directly. |
+| **Operating systems (Linux, macOS, Windows)** | The interface between hardware and user; Linux specifically is open-source and command-line driven. |
+| **Antivirus / anti-malware software** | Scans for and removes malware. |
+| **IDS** | Monitors packets and system activity for possible intrusions. |
+| **Encryption** | Converts readable plaintext into unreadable ciphertext - protects confidentiality even if data is intercepted. |
+| **Penetration testing** | Simulated attacks used to proactively find vulnerabilities before a real attacker does. |
+
+### Playbooks in practice - a scenario that made this concrete for me
+
+The course used a forensic-investigation scenario (a medical practice breach being investigated for an insurance claim) to show two playbooks working together:
+
+1. **Chain of custody playbook** - documents who has possession of the evidence, and when, at every step, so nothing about the evidence's integrity can be challenged later.
+2. **Protecting and preserving evidence playbook** - governs how to handle *volatile* digital evidence (data that can be lost if a device powers off), following the **order of volatility** to prioritize what must be preserved first. In practice, this means working from copies of the evidence, never the original, so the investigation itself doesn't corrupt the data.
+
+**This stuck with me** as it's the clearest example in the course of *why* process (not just tools) matters, even perfect technical evidence is useless in an investigation if it wasn't handled correctly.
 
 ---
 
 ## Skills Gained
 
-- Foundational cybersecurity terminology and concepts
-- Applying the CIA triad to risk-based decisions
-- Recognizing security frameworks, controls, and compliance obligations
-- Identifying attack patterns and mapping attacks to the eight CISSP security domains
-- Profiling threat actors and their motivations
-- Making ethical and legal decisions as a security professional
-- Following incident response playbooks and chain-of-custody proceduresl
-- Communication, problem-solving, time management, and a growth mindset
+- Vocabulary and mental models for core cybersecurity concepts (CIA triad, frameworks vs. controls vs. compliance)
+- Ability to classify attacks (phishing, malware, social engineering) and map them to relevant CISSP domains
+- Understanding of threat actor types and their motivations
+- Familiarity with major compliance standards (NIST, GDPR, HIPAA, PCI DSS, ISO, SOC, FedRAMP, FERC-NERC)
+- Awareness of the legal/ethical boundaries around counterattacks and data privacy (PII/SPII)
+- Working knowledge of entry-level analyst tools: SIEM, IDS, packet sniffers, playbooks, encryption, penetration testing
+- Recognition of both transferable (communication, problem-solving) and technical (Python, SQL) skills needed in the field
 
-## Key Learnings and Reflections
+## Summary
 
-Completing this course gave me a mental map of the cybersecurity field before I go deeper into any single tool or technique. A few things that stood out were:
-
-- Most successful attacks exploit **people**, not just technology - which is why ethics and communication are treated as core skills, not extras.
-- Frameworks, controls, and compliance are three distinct but connected layers, and I now know where each one fits.
-- Legally, defense is my only real option as a security professional - counterattacking is off the table in almost every circumstance.
-- The tools introduced here (SIEM, IDS, packet analyzers, playbooks) are things I'll actually use hands-on in later courses, so this course was as much about vocabulary as it was about mindset.
+- Cybersecurity protects the **confidentiality, integrity, and availability** of data across networks, devices, and people.
+- **Frameworks** set the plan, **controls** execute it, and **compliance** proves it's being followed legally.
+- Attacks generally exploit either a **technical gap** (malware, cryptographic attacks) or **human trust** (phishing, social engineering) - and social engineering is effective because of principles like authority, urgency, and scarcity.
+- **Threat actors** range from unskilled opportunists to state-level APTs, and "hacker" itself is a neutral term defined by intent, not skill.
+- Major regulations (GDPR, HIPAA, PCI DSS) exist to protect specific categories of sensitive data, each with its own scope and consequences.
+- **Counterattacking is illegal in the U.S.** and tightly restricted internationally - defense, not retaliation, is the standard.
+- Entry-level analysts rely on a consistent toolkit: SIEM for log analysis, IDS for intrusion detection, playbooks for consistent incident response, and encryption/pen testing to proactively reduce risk.
 
 ## Conclusion
 
-This first course laid the groundwork I needed before moving into the more technical parts of the certificate. I now have a shared vocabulary for threats, attacks, and defenses, an understanding of the legal and ethical boundaries I have to work within, and a first look at the tools I'll be using throughout the rest of the program.
+Going through this course reframed cybersecurity for me from "a technical IT specialty" to something closer to a **cross-disciplinary risk-management practice** - one that blends technical tooling (SIEM, IDS, encryption, programming) with human factors (social engineering, communication, ethics) and legal/regulatory obligations (HIPAA, GDPR, PCI DSS). The recurring thread through every topic - attacks, controls, ethics, tools is the **CIA triad**; everything either protects confidentiality, integrity, or availability, or it's a gap that a threat actor can exploit. That single lens is what I'll carry forward into the rest of this certificate program.
