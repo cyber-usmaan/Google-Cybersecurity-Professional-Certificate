@@ -254,7 +254,7 @@ The course used a forensic-investigation scenario (a medical practice breach bei
 - Working knowledge of entry-level analyst tools: SIEM, IDS, packet sniffers, playbooks, encryption, penetration testing
 - Recognition of both transferable (communication, problem-solving) and technical (Python, SQL) skills needed in the field
 
-## Summary
+## Key Learnings and Understandings
 
 - Cybersecurity protects the **confidentiality, integrity, and availability** of data across networks, devices, and people.
 - **Frameworks** set the plan, **controls** execute it, and **compliance** proves it's being followed legally.
