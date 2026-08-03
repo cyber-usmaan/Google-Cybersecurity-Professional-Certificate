@@ -31,7 +31,7 @@ This is the second course of the Google Cybersecurity Certificate. Building on t
 ### 1. The Eight CISSP Security Domains
 
 <p align="center">
-  <img src="images/CISSP Domains.png" alt="Eight CISSP security domains" width="640"/>
+  <img src="images/CISSP Domains.png" alt="Eight CISSP security domains" width="450"/>
 </p>
 
 I learned that the CISSP's eight security domains give me a way to organize the full scope of a security analyst's responsibilities, from policy down to code.
@@ -48,7 +48,7 @@ I learned that the CISSP's eight security domains give me a way to organize the 
 ### 2. Managing Threats, Risks, and Vulnerabilities
 
 <p align="center">
-  <img src="images/Threats Risks and Vulnerability.png" alt="Eight CISSP security domains" width="640"/>
+  <img src="images/Threats Risks and Vulnerability.png" alt="Eight CISSP security domains" width="450"/>
 </p>
 
 Learned to separate three terms that are often used interchangeably but describe different things:
@@ -87,7 +87,7 @@ Controls fall into three categories, and learned to recognize examples of each:
 ### 4. Applying the CIA Triad as an Analyst
 
 <p align="center">
-  <img src="images/CIA Triad.png" alt="Eight CISSP security domains" width="640"/>
+  <img src="images/CIA Triad.png" alt="Eight CISSP security domains" width="450"/>
 </p>
 
 Course 1 introduced the CIA triad; here it was taught that how each element plays out day to day:
@@ -114,7 +114,7 @@ The NIST CSF organizes an organization's cybersecurity work into Six ongoing fun
 ### 6. OWASP Security Principles
 
 <p align="center">
-  <img src="images/OSWAP top 10.webp" alt="NIST CSF five functions" width="720"/>
+  <img src="images/OSWAP top 10.webp" alt="NIST CSF five functions" width="500"/>
 </p>
 
 I built on the OWASP principles introduced earlier with four additional ones. Together, these ten principles now guide how to think about secure design:
