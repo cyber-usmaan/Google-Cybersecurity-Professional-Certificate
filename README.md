@@ -6,11 +6,11 @@ Documentating coursework, key learnings, and projects completed as part of this 
 
 ## Completed Course Breakdown
 
-Courses and their module covered in the certificate.
+Writeup for each Course and its module breakdown, in the certificate.
 
 ### 1. Foundations of Cybersecurity:
 
-[Visit Course 1 Overview and Certificate](https://github.com/cyber-usmaan/Google-Cybersecurity-Professional-Certificate/blob/main/Course%201.%20Foundations%20of%20Cybersecurity.md)
+[Visit Course 1 writeup and Certificate](https://github.com/cyber-usmaan/Google-Cybersecurity-Professional-Certificate/blob/main/Course%201.%20Foundations%20of%20Cybersecurity.md)
 
 4 Modules are:
 - Introduction to Cybersecurity
@@ -20,13 +20,23 @@ Courses and their module covered in the certificate.
 
 ### 2. Manage Security Risks:
 
-[Visit Course 2 Overview and Certificate](https://github.com/cyber-usmaan/Google-Cybersecurity-Professional-Certificate/blob/main/Course%202.%20Manage%20Security%20Risks.md)
+[Visit Course 2 writeup and Certificate](https://github.com/cyber-usmaan/Google-Cybersecurity-Professional-Certificate/blob/main/Course%202.%20Manage%20Security%20Risks.md)
 
 4 Modules are:
 - Security Domains
 - Security Frameworks and Controls
 - Cybersecurity Tools
 - Using Playbooks to Respond to Incidents
+
+### 3. Connect and Protect: Network and Network Security
+
+[Visit Course 3 writeup and Certificate[](https://github.com/cyber-usmaan/Google-Cybersecurity-Professional-Certificate/edit/main/Course%203.%20Network%20and%20Network%20Security.md)
+
+There are 4 modules in this course:
+- Network Architecture
+- Network Operations
+- Secure against network intrusions
+- Security Hardening
 
 <!-- Duplicate the block above for each course in the certificate -->
 
