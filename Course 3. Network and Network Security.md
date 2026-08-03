@@ -1,10 +1,31 @@
-# Course 3: Networks and Network Security
+![Course](https://img.shields.io/badge/Course%203-Connect%20And%20Protect:%20Network%20And%20Network%20Security-4285F4)
+![Status](https://img.shields.io/badge/Status-Completed-4EEB2A)
 
-## My Learning Portfolio
+#  Course 3. Connect and Protect: Networks and Network Security
 
+## About This Course
 This course helped me build a strong foundation in how networks are built, how data travels across them, and how attackers try to exploit them. Below is a breakdown of everything I learned, explained in my own words, with examples to show my understanding.
 
 ---
+
+## Certificate
+
+<p align="center">
+  <img src="images/Google Cert 3 Connect and Protect Networks and Network Security.png" alt="Certificate placeholder" width="480"/>
+</p>
+
+---
+
+## Modules Covered
+There are 4 modules in this course:
+- Network Architecture
+- Network Operations
+- Secure against network intrusions
+- Security Hardening
+
+---
+
+## What I Learned
 
 ## 1. Network Basics: Devices and Diagrams
 
@@ -296,12 +317,6 @@ This was a key concept. The CSP is responsible for securing the underlying cloud
 
 ---
 
-## Conclusion
-
-This course completely reshaped how I see the internet. Before this, I used networks every day without thinking about what happens behind the scenes. Now I can explain how a single web request travels through the TCP/IP layers, gets routed using IP addressing, passes through firewalls and possibly an IDS or IPS, and reaches a server, all in a fraction of a second. I also understand that security is never about one tool. It is about layering firewalls, encryption, monitoring, and good policies together, which is the defense in depth principle that came up again and again throughout the course. The real world DDoS case study especially helped me connect the theory to how these attacks actually unfold in practice.
-
----
-
 ## Skills Gained
 
 - Understanding of core network devices: routers, switches, hubs, firewalls, modems, and access points
@@ -318,7 +333,7 @@ This course completely reshaped how I see the internet. Before this, I used netw
 
 ---
 
-## Summary
+## Key Learnings and Reflections
 
 - Networks rely on specialized devices such as routers, switches, and firewalls to move and secure data.
 - Cloud computing shifts infrastructure to CSPs through SaaS, IaaS, and PaaS models, offering reliability, lower cost, and scalability.
@@ -330,3 +345,9 @@ This course completely reshaped how I see the internet. Before this, I used netw
 - Firewalls, proxies, VPNs, IDS, IPS, and SIEM tools work together under the defense in depth principle.
 - Common attacks include packet sniffing, IP spoofing, on path attacks, smurf attacks, DoS attacks, backdoors, and brute force attempts, each with specific prevention strategies.
 - Cloud security depends heavily on the shared responsibility model, proper IAM configuration, and strong cryptographic practices.
+
+---
+
+## Conclusion
+
+This course completely reshaped how I see the internet. Before this, I used networks every day without thinking about what happens behind the scenes. Now I can explain how a single web request travels through the TCP/IP layers, gets routed using IP addressing, passes through firewalls and possibly an IDS or IPS, and reaches a server, all in a fraction of a second. I also understand that security is never about one tool. It is about layering firewalls, encryption, monitoring, and good policies together, which is the defense in depth principle that came up again and again throughout the course. The real world DDoS case study especially helped me connect the theory to how these attacks actually unfold in practice.
