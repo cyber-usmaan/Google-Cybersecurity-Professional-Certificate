@@ -45,13 +45,19 @@ A network is simply the infrastructure that lets devices talk to each other. Bef
 
 **Network diagrams**: These are visual maps showing how devices connect using icons and dotted lines. As a security analyst, reading these diagrams helps me quickly understand where the weak points of a network might be, similar to how a floor plan helps identify entry and exit points of a building.
 
-[Insert image: Basic home network diagram with modem, router, switch, and firewall]
+<p align="center">
+  <img src="images/network diagrams.png" width="550"/>
+</p>
 
 ---
 
 ## 2. Cloud Computing and Software Defined Networks
 
 I learned that networks are not only physical anymore. Cloud computing means using remote servers hosted by a Cloud Service Provider (CSP) instead of owning physical hardware.
+
+<p align="center">
+  <img src="images/cloud based services.png" width="550"/>
+</p>
 
 ### Cloud Service Models
 
@@ -80,6 +86,10 @@ I now understand why almost every modern company relies on some form of cloud in
 
 This was one of the most important concepts in the course. The TCP/IP model explains how data is organized and transmitted across a network in four layers.
 
+<p align="center">
+  <img src="images/tcpip model.png" width="550"/>
+</p>
+
 | Layer | Purpose | Common Protocols |
 |---|---|---|
 | Application Layer | User facing requests and responses | HTTP, DNS, SMTP, SSH, FTP |
@@ -93,11 +103,13 @@ My way of remembering this: the application layer is what I see (a browser), the
 - **TCP**: Connection based. Uses a three way handshake (SYN, SYN/ACK, ACK) before sending data. Reliable, used for things like loading a webpage where every piece of data matters.
 - **UDP**: Connectionless. No handshake, so it is faster but less reliable. Used for video streaming or DNS lookups where speed matters more than perfect delivery.
 
-[Insert image: TCP three way handshake diagram]
-
 ---
 
 ## 4. The OSI Model
+
+<p align="center">
+  <img src="images/OSI model.png" width="550"/>
+</p>
 
 The OSI model is the more detailed, seven layer version of the same idea as TCP/IP. I learned to work through it from Layer 7 down to Layer 1.
 
@@ -113,7 +125,9 @@ The OSI model is the more detailed, seven layer version of the same idea as TCP/
 
 **TCP/IP vs OSI**: The TCP/IP model condenses the OSI model's seven layers into four. Application, presentation, and session (Layers 7, 6, 5) combine into one application layer in TCP/IP. Both models are just two different ways to describe the same journey of data across a network. I found it useful to think of OSI as the "textbook" version and TCP/IP as the "practical" version used more often in the industry.
 
-[Insert image: OSI model vs TCP/IP model side by side comparison]
+<p align="center">
+  <img src="images/tcpvsudp model.png" width="700"/>
+</p>
 
 ---
 
@@ -121,6 +135,10 @@ The OSI model is the more detailed, seven layer version of the same idea as TCP/
 
 ### The IPv4 Packet
 An IPv4 packet has two parts: a header (20 to 60 bytes) and the data being carried. The header contains important fields such as:
+
+<p align="center">
+  <img src="images/ipv4 header.png" width="550"/>
+</p>
 
 | Field | Purpose |
 |---|---|
@@ -136,6 +154,10 @@ An IPv4 packet has two parts: a header (20 to 60 bytes) and the data being carri
 The **TTL** field genuinely surprised me. I did not realize packets have a built in expiry counter to prevent them from looping forever if something goes wrong with routing.
 
 ### IPv4 vs IPv6
+
+<p align="center">
+  <img src="images/ipv4 vs ipv6.png" width="550"/>
+</p>
 
 | Aspect | IPv4 | IPv6 |
 |---|---|---|
@@ -178,13 +200,15 @@ Protocols are like an agreed language that all devices use to talk to each other
 
 A simple way I remember the email protocols: POP3 downloads and often removes mail from the server (like taking a letter out of a mailbox), while IMAP leaves a copy on the server so I can check the same inbox from my phone and my laptop.
 
-[Insert image: Table showing common protocols and their ports]
-
 ---
 
 ## 7. Evolution of Wireless Security Protocols
 
 Wi-Fi security did not appear overnight. It evolved as older protocols were broken by attackers.
+
+<p align="center">
+  <img src="images/wpa protocols.png" width="400"/>
+</p>
 
 | Protocol | Year | Key Improvement | Known Weakness |
 |---|---|---|---|
@@ -200,6 +224,10 @@ Wi-Fi security did not appear overnight. It evolved as older protocols were brok
 ## 8. Subnetting and CIDR
 
 Subnetting is the process of dividing one large network into smaller, organized sections called subnets. I like to picture it as a big city (the whole network) being divided into neighborhoods (subnets). Each neighborhood can be managed and secured on its own, and traffic within a neighborhood does not need to leave it just to reach a next door device.
+
+<p align="center">
+  <img src="images/subnetting.png" width="500"/>
+</p>
 
 **CIDR (Classless Inter Domain Routing)** is the notation used to define subnets. An address like 198.51.100.0/24 tells me the prefix length, which decides how many addresses fall inside that subnet. CIDR replaced the older, more rigid classful addressing system from the 1980s that was running out of room as the internet grew.
 
@@ -240,7 +268,9 @@ A VPN encrypts my data and hides my IP address by wrapping my traffic inside ano
 
 I now understand the concept of **defense in depth**: no single tool is perfect on its own, so security professionals layer a firewall, an IDS or IPS, and a SIEM together to build stronger protection.
 
-[Insert image: Example SIEM dashboard showing aggregated security events]
+<p align="center">
+  <img src="images/application of network security.png" width="550"/>
+</p>
 
 ---
 
@@ -278,13 +308,17 @@ Attackers try to guess login credentials through repeated attempts.
 
 ### tcpdump
 tcpdump is a lightweight, command line packet analyzer preinstalled on most Linux systems. Reading its output taught me to identify:
+
+<p align="center">
+  <img src="images/tcp dump.png" width="500"/>
+</p>
+
 - Timestamp of the captured packet
 - Source IP and port
 - Destination IP and port
 
 This is a practical skill because security analysts use tools like tcpdump or Wireshark to spot unusual traffic patterns that may indicate an attack such as a DoS.
 
-[Insert image: Sample tcpdump terminal output with source and destination IPs highlighted]
 
 ### Real World Case Study: The 2016 DNS Provider DDoS Attack
 This case study made the theory click for me. A group had built a botnet originally meant for attacking gaming servers, and posted its code publicly. Other criminals used that same code to launch tens of millions of DNS requests at a major DNS service provider in a single morning. Since many large companies relied on this one provider, websites across North America and Europe became unreachable. The provider recovered within two hours, but it showed me how a single point of failure (relying on one DNS provider) combined with a botnet can cause widespread damage very quickly.
