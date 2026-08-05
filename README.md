@@ -38,6 +38,16 @@ There are 4 modules in this course:
 - Secure against network intrusions
 - Security Hardening
 
+### 4. Tools of Trade: Linux and SQL
+
+[Visit Course 3 writeup and Certificate](https://github.com/cyber-usmaan/Google-Cybersecurity-Professional-Certificate/blob/main/Course%204.%20Tools%20of%20Trade%20-%20Linux%20and%20SQL.md)
+
+There are 4 modules in this course:
+- Operating Systems
+- The Linux OS
+- Linux Command using BASH
+- Database and SQL
+
 <!-- Duplicate the block above for each course in the certificate -->
 
 ---
