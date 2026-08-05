@@ -11,7 +11,7 @@ This course helped me build a strong foundation in how networks are built, how d
 ## Certificate
 
 <p align="center">
-  <img src="images/Google Cert 3 Connect and Protect Networks and Network Security.png" alt="Certificate placeholder" width="480"/>
+  <img src="images/Google Cert 3 Connect and Protect Networks and Network Security.png" alt="Certificate placeholder" width="720"/>
 </p>
 
 ---
