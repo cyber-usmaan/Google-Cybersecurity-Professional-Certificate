@@ -12,7 +12,7 @@ This is the second course of the Google Cybersecurity Certificate. Building on t
 ## Certificate
 
 <p align="center">
-  <img src="images/Google Cert 2 Manage Security Risks.png" alt="Certificate placeholder" width="480"/>
+  <img src="images/Google Cert 2 Manage Security Risks.png" alt="Certificate placeholder" width="720"/>
 </p>
 
 ---
