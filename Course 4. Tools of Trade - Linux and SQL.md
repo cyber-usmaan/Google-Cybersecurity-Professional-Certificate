@@ -11,7 +11,7 @@ This course introduced me to two tools that form the backbone of daily work for 
 ## Certificate
 
 <p align="center">
-  <img src="images/#" alt="Certificate placeholder" width="480"/>
+  <img src="images/Google Cert 4 Tools of Trade - Linux and SQL.png" alt="Certificate placeholder" width="720"/>
 </p>
 
 ---
@@ -28,7 +28,9 @@ There are 4 modules in this course:
 
 ## Part 1: Operating Systems
 
-[operating system image]
+<p align="center">
+  <img src="images/operating system.png" width="550"/>
+</p>
 
 ### What an operating system actually does
 
@@ -66,7 +68,9 @@ Keeping systems updated is one of the simplest but most effective ways to reduce
 
 ## Part 2: Virtualization
 
-[virtualization image]
+<p align="center">
+  <img src="images/virtualization technology.jpg" width="550"/>
+</p>
 
 ### What a virtual machine is
 
@@ -90,7 +94,9 @@ A hypervisor is the software that manages VMs and shares the host machine's reso
 
 A GUI (Graphical User Interface) uses visual elements like icons and windows, and only lets me perform one action at a time. A CLI (Command Line Interface) is entirely text based but allows me to run multiple commands quickly and in sequence. For a security analyst, the CLI has a major advantage: it keeps a history file of every command run. This means I can trace back exactly what actions were taken during an incident response, which is extremely valuable for both accountability and forensics.
 
-[CLI vs GUI]
+<p align="center">
+  <img src="images/gui vs cli.png" width="550"/>
+</p>
 
 ### The layers of Linux architecture
 
@@ -139,7 +145,9 @@ Discovered that `sudo` is required before install or remove commands because cha
 
 ### The Filesystem Hierarchy Standard (FHS)
 
-[image FHS]
+<p align="center">
+  <img src="images/FHS.png" width="550"/>
+</p>
 
 Everything in Linux branches from the root directory, represented by a forward slash `/`. Below root are standard directories:
 
