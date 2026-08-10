@@ -1,48 +1,24 @@
 # Course 5: Assets, Threats, and Vulnerabilities
 
-### A Portfolio Summary of Concepts and Practical Learning
+![Course](https://img.shields.io/badge/Intro%20to%20Cybersecurity-4285F4)
+![Course](https://img.shields.io/badge/Evolution%20of%20Cybersecurity-4285F4)
+![Course](https://img.shields.io/badge/Protect%20against%20Threats,%20Risks%20and%20Vulnerabilities-4285F4)
+![Course](https://img.shields.io/badge/Cybersecurity%20Tools%20and%20Programming%20Languages-4285F4)
+![Status](https://img.shields.io/badge/Status-Completed-4EEB2A)
 
+## About This Course
 This course builds the foundation of how security professionals think about protecting an organization. It moves from basic definitions of risk, to asset classification, cloud security, cryptography, identity management, attacker behavior, and common attack techniques like malware, phishing, and SQL injection. Below is a breakdown of every topic covered, explained in simple terms with examples, along with the hands on labs I completed during the course.
 
-![Course cover image placeholder](images/course5-cover.png)
-
 ---
 
-## Table of Contents
+## Certificate
 
-1. [Understanding Risk, Threats, and Vulnerabilities](#understanding-risk-threats-and-vulnerabilities)
-2. [Asset Classification and Management](#asset-classification-and-management)
-3. [Cloud Computing and Cloud Security](#cloud-computing-and-cloud-security)
-4. [NIST Cybersecurity Framework](#nist-cybersecurity-framework)
-5. [Principle of Least Privilege and Separation of Duties](#principle-of-least-privilege-and-separation-of-duties)
-6. [The Data Lifecycle and Data Governance](#the-data-lifecycle-and-data-governance)
-7. [Protecting Legally Sensitive Information](#protecting-legally-sensitive-information)
-8. [Privacy Regulations, Compliance, Audits and Assessments](#privacy-regulations-compliance-audits-and-assessments)
-9. [Cryptography: Symmetric and Asymmetric Encryption](#cryptography-symmetric-and-asymmetric-encryption)
-10. [Hands on Lab: Decrypting Files with Linux and OpenSSL](#hands-on-lab-decrypting-files-with-linux-and-openssl)
-11. [Hash Functions and Secure Password Storage](#hash-functions-and-secure-password-storage)
-12. [Hands on Lab: Comparing File Hashes](#hands-on-lab-comparing-file-hashes)
-13. [Authentication: SSO and MFA](#authentication-sso-and-mfa)
-14. [Identity and Access Management](#identity-and-access-management)
-15. [Securing CI/CD Pipelines](#securing-cicd-pipelines)
-16. [The OWASP Top 10](#the-owasp-top-10)
-17. [Open Source Intelligence](#open-source-intelligence)
-18. [Vulnerability Scanning](#vulnerability-scanning)
-19. [Patch Management and Software Updates](#patch-management-and-software-updates)
-20. [Penetration Testing](#penetration-testing)
-21. [Thinking Like an Attacker](#thinking-like-an-attacker)
-22. [Types of Threat Actors and Attack Vectors](#types-of-threat-actors-and-attack-vectors)
-23. [Brute Force Attacks and Defenses](#brute-force-attacks-and-defenses)
-24. [Social Engineering Tactics](#social-engineering-tactics)
-25. [Types of Phishing](#types-of-phishing)
-26. [Introduction to Malware](#introduction-to-malware)
-27. [SQL Injection Attacks and Prevention](#sql-injection-attacks-and-prevention)
-28. [Threat Modeling Frameworks](#threat-modeling-frameworks)
-29. [Conclusion](#conclusion)
-30. [Skills Gained](#skills-gained)
-31. [Summary](#summary)
+<p align="center">
+  <img src="images/Google Cert 1 Foundations of CyberSecurity-1.png" alt="Certificate placeholder" width="720"/>
+</p>
 
 ---
+# What I Learned
 
 ## Understanding Risk, Threats, and Vulnerabilities
 
