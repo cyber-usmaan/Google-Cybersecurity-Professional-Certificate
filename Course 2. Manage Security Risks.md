@@ -1,7 +1,11 @@
-![Course](https://img.shields.io/badge/Course%202-Manage%20Security%20Risks-4285F4)
+# Course 2: Manage Security Risks
+
+![Module](https://img.shields.io/badge/Security%20Domains-4285F4)
+![Module](https://img.shields.io/badge/Security%20Frameworks%20and%20Controls-4285F4)
+![Module](https://img.shields.io/badge/Cybersecurity%20Tools-4285F4)
+![Module](https://img.shields.io/badge/Using%20playbooks%20for%20Security%20Incidents-4285F4)
 ![Status](https://img.shields.io/badge/Status-Completed-4EEB2A)
 
-# Course 2: Manage Security Risks
 
 ## About This Course
 
@@ -14,15 +18,6 @@ This is the second course of the Google Cybersecurity Certificate. Building on t
 <p align="center">
   <img src="images/Google Cert 2 Manage Security Risks.png" alt="Certificate placeholder" width="720"/>
 </p>
-
----
-
-## Modules Covered
-
-- Security Domains
-- Security Frameworks and Controls
-- Cybersecurity Tools
-- Using Playbooks to Respond to Incidents
 
 ---
 
