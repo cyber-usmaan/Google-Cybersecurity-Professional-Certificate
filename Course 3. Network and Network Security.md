@@ -1,7 +1,10 @@
-![Course](https://img.shields.io/badge/Course%203-Connect%20And%20Protect:%20Network%20And%20Network%20Security-4285F4)
-![Status](https://img.shields.io/badge/Status-Completed-4EEB2A)
-
 #  Course 3. Connect and Protect: Networks and Network Security
+
+![Module](https://img.shields.io/badge/Network%20Architecture-4285F4)
+![Module](https://img.shields.io/badge/Network%20Operations-4285F4)
+![Module](https://img.shields.io/badge/Security%20Againt%20Network%20Intrusions-4285F4)
+![Module](https://img.shields.io/badge/Security%20Hardening-4285F4)
+![Status](https://img.shields.io/badge/Status-Completed-4EEB2A)
 
 ## About This Course
 This course helped me build a strong foundation in how networks are built, how data travels across them, and how attackers try to exploit them. Below is a breakdown of everything I learned, explained in my own words, with examples to show my understanding.
@@ -13,15 +16,6 @@ This course helped me build a strong foundation in how networks are built, how d
 <p align="center">
   <img src="images/Google Cert 3 Connect and Protect Networks and Network Security.png" alt="Certificate placeholder" width="720"/>
 </p>
-
----
-
-## Modules Covered
-There are 4 modules in this course:
-- Network Architecture
-- Network Operations
-- Secure against network intrusions
-- Security Hardening
 
 ---
 
