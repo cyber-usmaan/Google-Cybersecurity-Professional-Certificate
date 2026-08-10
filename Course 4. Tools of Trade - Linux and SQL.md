@@ -1,7 +1,9 @@
-![Course](https://img.shields.io/badge/Course%204-Tools%20of%20Trade:%20Linux%20And%20SQL-4285F4)
-![Status](https://img.shields.io/badge/Status-Completed-4EEB2A)
-
 # Course 4. Tools of the Trade: Linux and SQL
+![Module](https://img.shields.io/badge/Operating%20Systems-4285F4)
+![Module](https://img.shields.io/badge/The%20Linux%20OS-4285F4)
+![Module](https://img.shields.io/badge/Linux%20Using%20BASH-4285F4)
+![Module](https://img.shields.io/badge/Database%20%20SQL-4285F4)
+![Status](https://img.shields.io/badge/Status-Completed-4EEB2A)
 
 ## About This Course
 This course introduced me to two tools that form the backbone of daily work for a security analyst: Linux and SQL. Before this course, I only had a surface level idea of what an operating system does and had never written a database query. By the end of this course, I could navigate a Linux file system using only the command line, manage users and permissions, filter and search through logs, and write SQL queries to pull specific information out of a database. Below, I explain each concept in my own words, connect ideas where it makes sense, and use examples that reflect how I understood them.
@@ -13,15 +15,6 @@ This course introduced me to two tools that form the backbone of daily work for 
 <p align="center">
   <img src="images/Google Cert 4 Tools of Trade - Linux and SQL.png" alt="Certificate placeholder" width="720"/>
 </p>
-
----
-
-## Modules Covered
-There are 4 modules in this course:
-- Operating Systems
-- The Linux OS
-- Linux Command using BASH
-- Database and SQL
 
 ---
 ## What I Learned
