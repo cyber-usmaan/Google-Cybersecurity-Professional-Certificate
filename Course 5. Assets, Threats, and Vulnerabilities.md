@@ -1,9 +1,9 @@
 # Course 5: Assets, Threats, and Vulnerabilities
 
 ![Course](https://img.shields.io/badge/Intro%20to%20Cybersecurity-4285F4)
-![Course](https://img.shields.io/badge/Evolution%20of%20Cybersecurity-4285F4)
-![Course](https://img.shields.io/badge/Protect%20against%20Threats,%20Risks%20and%20Vulnerabilities-4285F4)
-![Course](https://img.shields.io/badge/Cybersecurity%20Tools%20and%20Programming%20Languages-4285F4)
+![Course](https://img.shields.io/badge/Protect%20Organizational%20Assets-4285F4)
+![Course](https://img.shields.io/badge/Vulnerabilites%20in%20Threats,%20Risks%20and%20Vulnerabilities-4285F4)
+![Course](https://img.shields.io/badge/Threats%20to%20Assets%20Security-4285F4)
 ![Status](https://img.shields.io/badge/Status-Completed-4EEB2A)
 
 ## About This Course
@@ -505,31 +505,15 @@ Regardless of the framework, effective threat modeling always comes back to five
 
 ---
 
-## Conclusion
-
-Working through this course gave me a much clearer picture of how the different pieces of cybersecurity connect to one another. Risk, threats, and vulnerabilities are not separate ideas, they feed into each other, and every control covered in this course, from least privilege to encryption to threat modeling, exists to reduce one or more of those three factors. What stood out most is how often technical controls and human awareness have to work together. Encryption and hashing protect data mathematically, but social engineering defenses depend entirely on training people to recognize manipulation. Completing the hands on labs, decrypting a Caesar cipher and comparing file hashes, also made these concepts feel practical rather than purely theoretical.
-
-## Skills Gained
+## Key Learnings and Takeaways
 
 * Explaining and applying the relationship between risk, threats, and vulnerabilities
 * Classifying assets and understanding data ownership challenges
-* Understanding cloud service models and the shared responsibility model
 * Applying the NIST Cybersecurity Framework structure
 * Implementing least privilege, separation of duties, and access control models (MAC, DAC, RBAC)
-* Understanding the data lifecycle and data governance roles
 * Recognizing PII, PHI, and SPII and how privacy regulations like GDPR, PCI DSS, and HIPAA apply
-* Comparing symmetric and asymmetric encryption and common algorithms
-* Using Linux commands and OpenSSL to decrypt files
 * Understanding hash functions, salting, and generating hashes with sha256sum
-* Explaining SSO, MFA, and IAM concepts
 * Identifying CI/CD pipeline risks and OWASP Top 10 vulnerabilities
-* Using OSINT tools and vulnerability scanning approaches
-* Understanding patch management strategies and EOL software risk
-* Explaining penetration testing types and the attacker mindset
-* Identifying threat actor categories and common attack vectors
-* Recognizing brute force techniques and their defenses
-* Identifying social engineering tactics and phishing types
-* Classifying different types of malware
 * Understanding and preventing SQL injection attacks
 * Applying threat modeling frameworks like STRIDE and PASTA
 
@@ -556,3 +540,7 @@ Working through this course gave me a much clearer picture of how the different 
 * Malware comes in many forms, each with a different method of spreading and causing harm
 * SQL injection remains a common and preventable vulnerability through proper input handling
 * Threat modeling frameworks like STRIDE and PASTA guide how security is built into software from the beginning
+
+## Conclusion
+
+Working through this course gave me a much clearer picture of how the different pieces of cybersecurity connect to one another. Risk, threats, and vulnerabilities are not separate ideas, they feed into each other, and every control covered in this course, from least privilege to encryption to threat modeling, exists to reduce one or more of those three factors. What stood out most is how often technical controls and human awareness have to work together. Encryption and hashing protect data mathematically, but social engineering defenses depend entirely on training people to recognize manipulation. Completing the hands on labs, decrypting a Caesar cipher and comparing file hashes, also made these concepts feel practical rather than purely theoretical.
