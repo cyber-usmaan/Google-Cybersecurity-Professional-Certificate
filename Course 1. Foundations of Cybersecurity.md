@@ -1,9 +1,9 @@
 #  Course 1: Foundations of Cybersecurity
 
-![Course](https://img.shields.io/badge/Intro%20to%20Cybersecurity-4285F4)
-![Course](https://img.shields.io/badge/Evolution%20of%20Cybersecurity-4285F4)
-![Course](https://img.shields.io/badge/Protect%20against%20Threats,%20Risks%20and%20Vulnerabilities-4285F4)
-![Course](https://img.shields.io/badge/Cybersecurity%20Tools%20and%20Programming%20Languages-4285F4)
+![Module](https://img.shields.io/badge/Intro%20to%20Cybersecurity-4285F4)
+![Module](https://img.shields.io/badge/Evolution%20of%20Cybersecurity-4285F4)
+![Module](https://img.shields.io/badge/Protect%20against%20Threats,%20Risks%20and%20Vulnerabilities-4285F4)
+![Module](https://img.shields.io/badge/Cybersecurity%20Tools%20and%20Programming%20Languages-4285F4)
 ![Status](https://img.shields.io/badge/Status-Completed-4EEB2A)
 
 ## About This Course
