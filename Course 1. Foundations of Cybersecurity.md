@@ -1,7 +1,10 @@
-![Course](https://img.shields.io/badge/Course%201-Foundations%20of%20Cybersecurity-4285F4)
-![Status](https://img.shields.io/badge/Status-Completed-4EEB2A)
-
 #  Course 1: Foundations of Cybersecurity
+
+![Course](https://img.shields.io/badge/Intro%20to%20Cybersecurity-4285F4)
+![Course](https://img.shields.io/badge/Evolution%20of%20Cybersecurity-4285F4)
+![Course](https://img.shields.io/badge/Protect%20against%20Threats,%20Risks%20and%20Vulnerabilities-4285F4)
+![Course](https://img.shields.io/badge/Cybersecurity%20Tools%20and%20Programming%20Languages-4285F4)
+![Status](https://img.shields.io/badge/Status-Completed-4EEB2A)
 
 ## About This Course
 This course covers the core vocabulary of cybersecurity, the transferable/technical skills an analyst needs, the most common attack types and threat actors, the frameworks/controls/compliance landscape, the ethics that guide security decisions, and the everyday tools analysts use.
@@ -15,15 +18,6 @@ I learned that cybersecurity is the practice of ensuring the confidentiality, in
 <p align="center">
   <img src="images/Google Cert 1 Foundations of CyberSecurity-1.png" alt="Certificate placeholder" width="720"/>
 </p>
-
----
-
-## Modules Covered
-There are 4 modules in this course:
-- Introduction to Cybersecurity
-- Evolution of Cybersecurity
-- Protect Against Threats, Risks, and Vulnerabilities
-- Cybersecurity Tools and Programming Languages
 
 ---
 
