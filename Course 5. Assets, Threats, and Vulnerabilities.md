@@ -14,7 +14,7 @@ This course builds the foundation of how security professionals think about prot
 ## Certificate
 
 <p align="center">
-  <img src="images/Google Cert 1 Foundations of CyberSecurity-1.png" alt="Certificate placeholder" width="720"/>
+  <img src="images/Google Cert 5 Assets Threats and Vulnerabilities_page_1.png" alt="Certificate placeholder" width="720"/>
 </p>
 
 ---
@@ -79,6 +79,10 @@ Common cloud security challenges include misconfiguration (using default setting
 
 The NIST Cybersecurity Framework (CSF) was released in 2014 to protect critical infrastructure in the United States, and was later adapted for businesses of any size. It is voluntary, unlike a regulation which must be followed by law. The framework has three components.
 
+<p align="center">
+  <img src="images/NIST CSF.png" width="720"/>
+</p>
+
 | Component | Purpose |
 |---|---|
 | Core | Six functions: Identify, Protect, Detect, Respond, Recover, Govern |
@@ -111,6 +115,10 @@ Access is not something to set once and forget. Organizations run three kinds of
 ---
 
 ## The Data Lifecycle and Data Governance
+
+<p align="center">
+  <img src="images/data lifecycle.png" width="480"/>
+</p>
 
 Data does not stay in one state. It moves through five stages known as the **data lifecycle**: Collect, Store, Use, Archive, and Destroy. Each stage requires its own security controls to keep information protected.
 
@@ -238,7 +246,15 @@ Authentication is normally verified through three factors, something a user know
 
 **Single sign on (SSO)** lets a user log in once and gain access to multiple connected services, reducing password fatigue and the number of access points an attacker can target. It works by using a trusted third party identity provider, and typically relies on protocols like LDAP (used on premises) and SAML (used off premises, such as in the cloud).
 
+<p align="center">
+  <img src="images/sso diagram.png" width="480"/>
+</p>
+
 SSO alone still relies on a single set of credentials, so if that password is stolen, every connected service is exposed. This is where **multi factor authentication (MFA)** comes in. MFA requires two or more of the three factors above before granting access, similar to needing both a debit card and a PIN at an ATM. Together, SSO improves convenience while MFA adds a second layer of proof, and most modern systems combine both.
+
+<p align="center">
+  <img src="images/mfa.png" width="480"/>
+</p>
 
 ---
 
@@ -256,13 +272,19 @@ Once a user is authenticated, the system still needs to decide what they are aut
 
 I also learned about **user provisioning**, the process of creating a digital identity when someone joins an organization, and **deprovisioning**, removing that access when it is no longer needed, which is just as important for reducing risk.
 
-![Access control models diagram placeholder](images/access-control-models.png)
+<p align="center">
+  <img src="images/rbac diagram.png" width="480"/>
+</p>
 
 ---
 
 ## Securing CI/CD Pipelines
 
 **CI/CD** stands for Continuous Integration, Continuous Delivery, and Continuous Deployment. It automates how software moves from code being written to code being released.
+
+<p align="center">
+  <img src="images/cicd pipeline.png" width="480"/>
+</p>
 
 | Stage | What it does |
 |---|---|
@@ -271,8 +293,6 @@ I also learned about **user provisioning**, the process of creating a digital id
 | Continuous Deployment | Fully automated, code that passes checks goes live with no manual approval |
 
 Automation is powerful, but an insecure pipeline can introduce vulnerabilities at scale. Common risks include insecure third party dependencies, weak access permissions on pipeline tools, missing automated security testing, hardcoded secrets like API keys, and unsecured build environments. The fix for these follows a **DevSecOps** approach, where security is built into every stage rather than checked at the end, combined with practices like least privilege access, automated scanning tools such as SAST and DAST, and dedicated secrets management tools instead of hardcoding credentials.
-
-![CI/CD pipeline diagram placeholder](images/cicd-pipeline.png)
 
 ---
 
@@ -386,8 +406,6 @@ Hackers themselves fall into three categories based on intent, unauthorized (mal
 
 Threat actors gain access through common vectors, direct physical access, removable media like USB drives, social media, email, wireless networks, cloud services, and supply chains through third party vendors.
 
-![Threat actor world map illustration placeholder](images/threat-actors-map.png)
-
 ---
 
 ## Brute Force Attacks and Defenses
@@ -408,6 +426,10 @@ Tools like Hashcat, John the Ripper, and Aircrack-ng automate this process, sinc
 * CAPTCHA, proving the login attempt is coming from a human, not a script
 * Password policies, enforcing minimum length, complexity, and lockout after repeated failed attempts
 
+<p align="center">
+  <img src="images/hash function.png" width="480"/>
+</p>
+
 ---
 
 ## Social Engineering Tactics
@@ -423,8 +445,6 @@ Tools like Hashcat, John the Ripper, and Aircrack-ng automate this process, sinc
 | Watering hole | Compromises a website that a specific target group commonly visits |
 
 A well known real world case is the 2020 Twitter hack, where attackers simply called employees pretending to be IT staff, and used that trust to gain access to internal tools and take over high profile accounts. This shows that social engineering does not require advanced technical skill, only convincing manipulation. Defense relies on training people to stay alert with suspicious communication, be cautious sharing information online, and control curiosity around offers that seem too good to be true.
-
-![Social engineering illustration placeholder](images/social-engineering.png)
 
 ---
 
@@ -449,6 +469,10 @@ Early phishing relied on **mass phishing**, sending the same message to as many 
 
 **Malware** is software designed to harm devices or networks. It comes in many forms, each spreading and behaving differently.
 
+<p align="center">
+  <img src="images/viruses.png" width="480"/>
+</p>
+
 | Type | Behavior |
 |---|---|
 | Virus | Must be installed by the user, then spreads and damages data |
@@ -463,8 +487,6 @@ Early phishing relied on **mass phishing**, sending the same message to as many 
 | Ransomware | Encrypts a victim's data and demands payment to restore access |
 
 A rootkit is often delivered using a **dropper**, a file disguised as something harmless that installs the malicious code once opened, or a **loader**, which downloads additional malicious code from an external source after the initial infection. A famous example of ransomware is the WannaCry attack, which encrypted victims' files and demanded a cryptocurrency payment to unlock them.
-
-![Malware types illustration placeholder](images/malware-types.png)
 
 ---
 
@@ -491,8 +513,6 @@ A good example is a login form expecting an email address. If the form does not 
 ## Threat Modeling Frameworks
 
 **Threat modeling** is the process of identifying assets, their vulnerabilities, and the threats they are exposed to. It is typically performed by a **DevSecOps** team and should happen throughout the entire software development lifecycle, not just at the end. A typical threat modeling cycle follows six steps, define the scope, identify threats, characterize the environment, analyze threats, mitigate risks, and evaluate findings.
-
-![Threat modeling cycle diagram placeholder](images/threat-modeling-cycle.png)
 
 | Framework | Focus |
 |---|---|
