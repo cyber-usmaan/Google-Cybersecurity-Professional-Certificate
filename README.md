@@ -2,7 +2,7 @@
 
 ![Status](https://img.shields.io/badge/Status-Completed-4EEB2A?style=for-the-badge)
 ![Platform](https://img.shields.io/badge/Coursera-Google-blue?style=for-the-badge&logo=coursera)
-![OS](https://img.shields.io/badge/OS-Windows-0078D6?style=for-the-badge&logo=windows)
+![OS](https://img.shields.io/badge/OS-Windows%20,%20Linux-0078D6?style=for-the-badge&logo=windows)
 ![IDE](https://img.shields.io/badge/IDE-VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code)
 
 **Repository Objective:**
@@ -127,7 +127,7 @@ Below is the writeup for each course in the certificate, along with its module b
 A collection of technical projects emphasizing real-world scenarios, from log analysis to security auditing.
 
 | Course | Project Name | Scenario / Description |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- |
 | **Course 2** | Security Audit & Compliance Report | Conducted a comprehensive security audit of a fictional company (Botium Toys) using the NIST CSF to identify vulnerabilities and recommend mitigations. |
 | **Course 3** | Network Security Incident Analysis | Analyzed network traffic (PCAP) to identify signs of a DoS attack and documented findings in a formal incident report. |
 | **Course 4** | File Permissions & SQL Database Management | Managed Linux file permissions using Bash to secure sensitive directories, and utilized SQL queries to extract security-relevant employee data. |
