@@ -10,15 +10,15 @@ A comprehensive compilation of coursework, foundational concepts, key learnings,
 
 ---
 
-## 🏆 Certifications & Badges
+## Certifications & Badges
 
-*   **Google Cybersecurity Certificate:** [Link to Coursera Certificate](#)
-*   **Credly Badge:** [Link to Digital Badge](#)
+*   **Google Cybersecurity Certificate:** [Link to Coursera Certificate](http://coursera.org/account/accomplishments/professional-cert/2M54S1KOFFZG)
+*   **Credly Badge:** [Link to Digital Badge](https://www.credly.com/badges/5ad0485c-9e88-4010-b4e4-955bd9d91483/public_url)
 *   **CompTIA Security+ Prep:** (Note: This curriculum aligns with the CompTIA Security+ SY0-601/SY0-701 exam objectives).
 
 ---
 
-## 💻 Environment & Lab Setup
+## Environment & Lab Setup
 
 To execute the scripts and projects in this repository, the following local development and lab environment is utilized:
 
@@ -29,7 +29,7 @@ To execute the scripts and projects in this repository, the following local deve
 
 ---
 
-## 📚 Completed Course Breakdown
+## Completed Course Breakdown
 
 Below is the writeup for each course in the certificate, along with its module breakdown and primary focus. 
 
@@ -91,7 +91,7 @@ Below is the writeup for each course in the certificate, along with its module b
 
 ---
 
-## 🎯 Core Competencies & Skills Gained
+## Core Competencies & Skills Gained
 
 ### Strategic & Compliance
 *   **Risk Management:** Applying the **CIA triad** (Confidentiality, Integrity, Availability) to risk-based decisions.
@@ -122,28 +122,28 @@ Below is the writeup for each course in the certificate, along with its module b
 
 ---
 
-## 📂 Hands-On Projects & Portfolio
+## In-Course Hands-On Projects & Activities
 
 A collection of technical projects emphasizing real-world scenarios, from log analysis to security auditing.
 
-| Course | Project Name | Scenario / Description | Link |
+| Course | Project Name | Scenario / Description |
 | :--- | :--- | :--- | :--- |
-| **Course 2** | Security Audit & Compliance Report | Conducted a comprehensive security audit of a fictional company (Botium Toys) using the NIST CSF to identify vulnerabilities and recommend mitigations. | [View Project](#) |
-| **Course 3** | Network Security Incident Analysis | Analyzed network traffic (PCAP) to identify signs of a DoS attack and documented findings in a formal incident report. | [View Project](#) |
-| **Course 4** | File Permissions & SQL Database Management | Managed Linux file permissions using Bash to secure sensitive directories, and utilized SQL queries to extract security-relevant employee data. | [View Project](#) |
-| **Course 5** | Threat Modeling & Vulnerability Assessment | Evaluated a simulated small business environment using threat modeling methodologies to identify attack vectors and recommend defense-in-depth strategies. | [View Project](#) |
-| **Course 6** | SIEM Log & Packet Investigation | Utilized Splunk and Chronicle to ingest log data, build dashboards, and trace a simulated ongoing security incident. | [View Project](#) |
-| **Course 7** | Python Log Parsing Automation | Developed a Python script to automate the extraction of flagged IP addresses and failed login attempts from raw text-based server logs. | [View Project](#) |
+| **Course 2** | Security Audit & Compliance Report | Conducted a comprehensive security audit of a fictional company (Botium Toys) using the NIST CSF to identify vulnerabilities and recommend mitigations. |
+| **Course 3** | Network Security Incident Analysis | Analyzed network traffic (PCAP) to identify signs of a DoS attack and documented findings in a formal incident report. |
+| **Course 4** | File Permissions & SQL Database Management | Managed Linux file permissions using Bash to secure sensitive directories, and utilized SQL queries to extract security-relevant employee data. |
+| **Course 5** | Threat Modeling & Vulnerability Assessment | Evaluated a simulated small business environment using threat modeling methodologies to identify attack vectors and recommend defense-in-depth strategies. |
+| **Course 6** | SIEM Log & Packet Investigation | Utilized Splunk and Chronicle to ingest log data, build dashboards, and trace a simulated ongoing security incident. |
+| **Course 7** | Python Log Parsing Automation | Developed a Python script to automate the extraction of flagged IP addresses and failed login attempts from raw text-based server logs. |
 
 ---
 
-## 🧠 Key Learnings & Reflections
+## Key Learnings & Reflections
 
 Throughout this certification, the transition from theoretical concepts to practical, hands-on tool usage heavily reinforced my understanding of how a Security Operations Center (SOC) functions. 
 
 *   **Defense-in-Depth is Mandatory:** Security cannot rely on a single barrier. Ensuring Confidentiality, Integrity, and Availability requires overlapping layers of technical, physical, and administrative controls.
 *   **Frameworks Drive Order from Chaos:** The **NIST CSF** (Identify, Protect, Detect, Respond, Recover) provides a necessary, repeatable structure for handling the chaos of an active incident, ensuring no critical steps or forensic evidence are lost during remediation.
-*   **The Power of Scripting:** Relying entirely on manual log analysis is not scalable. Writing Python to parse through logs, filter strings, and extract intelligence rapidly accelerates the detection pipeline—a crucial skill when dealing with high-volume SIEM data.
+*   **The Power of Scripting:** Relying entirely on manual log analysis is not scalable. Writing Python to parse through logs, filter strings, and extract intelligence rapidly accelerates the detection pipeline a crucial skill when dealing with high-volume SIEM data.
 *   **The Attacker Mindset:** Participating in simulated investigations highlighted the importance of thinking like a threat actor. You cannot effectively defend a network if you do not understand the tools and methodologies used to breach it.
 
 > *"Effective cybersecurity combines structural frameworks with the technical agility to detect, respond, and adapt to evolving threats."*
