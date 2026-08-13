@@ -1,7 +1,8 @@
 # Google Cybersecurity Professional Certificate - Coursera
 
 ![Status](https://img.shields.io/badge/Status-Completed-4EEB2A)
-Repository Objective:
+
+**Repository Objective:**
 Writing up coursework, key learnings, and projects completed as part of this certification.
 
 ---
