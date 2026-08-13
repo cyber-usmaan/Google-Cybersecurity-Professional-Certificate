@@ -1,6 +1,8 @@
-# Google Cybersecurity Professional Certificate - Coursera [Status: inprogress]
-Purpose of the Repository:
-Documentating coursework, key learnings, and projects completed as part of this certification.
+# Google Cybersecurity Professional Certificate - Coursera
+
+![Status](https://img.shields.io/badge/Status-Completed-4EEB2A)
+Repository Objective:
+Writing up coursework, key learnings, and projects completed as part of this certification.
 
 ---
 
