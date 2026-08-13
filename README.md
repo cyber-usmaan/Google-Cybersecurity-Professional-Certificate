@@ -6,17 +6,35 @@
 ![IDE](https://img.shields.io/badge/IDE-VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code)
 
 **Repository Objective:**
-Documenting coursework, foundational concepts, key learnings, and hands-on portfolio projects completed as part of the Google Cybersecurity Professional Certificate. 
+A comprehensive compilation of coursework, foundational concepts, key learnings, and hands-on portfolio projects completed as part of the Google Cybersecurity Professional Certificate. This repository serves as a digital notebook and project portfolio demonstrating practical competencies in network security, threat modeling, and incident response.
+
+---
+
+## 🏆 Certifications & Badges
+
+*   **Google Cybersecurity Certificate:** [Link to Coursera Certificate](#)
+*   **Credly Badge:** [Link to Digital Badge](#)
+*   **CompTIA Security+ Prep:** (Note: This curriculum aligns with the CompTIA Security+ SY0-601/SY0-701 exam objectives).
+
+---
+
+## 💻 Environment & Lab Setup
+
+To execute the scripts and projects in this repository, the following local development and lab environment is utilized:
+
+*   **Primary Host OS:** Windows 
+*   **Development Environment:** Visual Studio Code (VS Code) with Python and Jupyter extensions for script execution and documentation.
+*   **Virtualization:** VirtualBox (utilized for running local Linux instances and isolated SQL environments when necessary).
+*   **Version Control:** Git via Windows Command Prompt / PowerShell.
 
 ---
 
 ## 📚 Completed Course Breakdown
 
-Below is the writeup for each course in the certificate, along with its module breakdown. 
+Below is the writeup for each course in the certificate, along with its module breakdown and primary focus. 
 
 ### 1. Foundations of Cybersecurity
 [Visit Course 1 writeup and Certificate](https://github.com/cyber-usmaan/Google-Cybersecurity-Professional-Certificate/blob/main/Course%201.%20Foundations%20of%20Cybersecurity.md)
-
 *   **Module 1:** Introduction to Cybersecurity
 *   **Module 2:** Evolution of Cybersecurity
 *   **Module 3:** Protect Against Threats, Risks, and Vulnerabilities
@@ -24,7 +42,6 @@ Below is the writeup for each course in the certificate, along with its module b
 
 ### 2. Play It Safe: Manage Security Risks
 [Visit Course 2 writeup and Certificate](https://github.com/cyber-usmaan/Google-Cybersecurity-Professional-Certificate/blob/main/Course%202.%20Manage%20Security%20Risks.md)
-
 *   **Module 1:** Security Domains
 *   **Module 2:** Security Frameworks and Controls
 *   **Module 3:** Cybersecurity Tools
@@ -32,7 +49,6 @@ Below is the writeup for each course in the certificate, along with its module b
 
 ### 3. Connect and Protect: Networks and Network Security
 [Visit Course 3 writeup and Certificate](https://github.com/cyber-usmaan/Google-Cybersecurity-Professional-Certificate/blob/main/Course%203.%20Network%20and%20Network%20Security.md)
-
 *   **Module 1:** Network Architecture
 *   **Module 2:** Network Operations
 *   **Module 3:** Secure Against Network Intrusions
@@ -40,7 +56,6 @@ Below is the writeup for each course in the certificate, along with its module b
 
 ### 4. Tools of the Trade: Linux and SQL
 [Visit Course 4 writeup and Certificate](https://github.com/cyber-usmaan/Google-Cybersecurity-Professional-Certificate/blob/main/Course%204.%20Tools%20of%20Trade%20-%20Linux%20and%20SQL.md)
-
 *   **Module 1:** Operating Systems
 *   **Module 2:** The Linux OS and File Systems
 *   **Module 3:** Linux Commands Using BASH
@@ -48,7 +63,6 @@ Below is the writeup for each course in the certificate, along with its module b
 
 ### 5. Assets, Threats, and Vulnerabilities
 [Visit Course 5 writeup and Certificate](https://github.com/cyber-usmaan/Google-Cybersecurity-Professional-Certificate/blob/main/Course%205.%20Assets%20Threats%20and%20Vulnerabilities.md)
-
 *   **Module 1:** Introduction to Assets, Threats, and Vulnerabilities
 *   **Module 2:** Protect Organizational Assets (Security Controls & Cryptography)
 *   **Module 3:** Vulnerabilities in Systems
@@ -56,7 +70,6 @@ Below is the writeup for each course in the certificate, along with its module b
 
 ### 6. Sound the Alarm: Detection and Response
 [Visit Course 6 writeup and Certificate](https://github.com/cyber-usmaan/Google-Cybersecurity-Professional-Certificate/blob/main/Course%206.%20Detection%20and%20Response.md)
-
 *   **Module 1:** Incident Response Lifecycle
 *   **Module 2:** Network Traffic and Packet Analysis
 *   **Module 3:** Incident Investigation and Artifacts
@@ -64,7 +77,6 @@ Below is the writeup for each course in the certificate, along with its module b
 
 ### 7. Automate Cybersecurity Tasks with Python
 [Visit Course 7 writeup and Certificate](https://github.com/cyber-usmaan/Google-Cybersecurity-Professional-Certificate/blob/main/Course%207.%20Automate%20Tasks%20with%20Python.md)
-
 *   **Module 1:** Introduction to Python for Cybersecurity
 *   **Module 2:** Write Effective Python Code (Functions & Modules)
 *   **Module 3:** Work with Strings and Lists
@@ -72,7 +84,6 @@ Below is the writeup for each course in the certificate, along with its module b
 
 ### 8. Put It to Work: Prepare for Cybersecurity Jobs
 [Visit Course 8 writeup and Certificate](https://github.com/cyber-usmaan/Google-Cybersecurity-Professional-Certificate/blob/main/Course%208.%20Prepare%20for%20Cybersecurity%20Jobs.md)
-
 *   **Module 1:** Incident Classification and Escalation
 *   **Module 2:** Communication with Stakeholders
 *   **Module 3:** Engage with the Cybersecurity Community
@@ -80,53 +91,62 @@ Below is the writeup for each course in the certificate, along with its module b
 
 ---
 
-## 🎯 Skills Gained
+## 🎯 Core Competencies & Skills Gained
 
-*   **Risk Management:** Applying the **CIA triad** (Confidentiality, Integrity, Availability) to risk-based decisions and applying the **NIST Cybersecurity Framework (CSF)** across its core functions.
-*   **Security Frameworks & Auditing:** Organizing security responsibilities using the eight CISSP domains and recognizing physical, technical, and administrative controls.
-*   **Threat Detection & Analysis:** Identifying attack patterns, evaluating vulnerabilities, and adopting a threat actor mindset to mitigate risks.
-*   **Incident Response:** Following established incident response playbooks, understanding the incident lifecycle, and adhering to strict chain-of-custody procedures.
-*   **Automation & Scripting:** Developing Python scripts to parse logs, handle files, utilize regular expressions, and automate repetitive cybersecurity tasks.
-*   **Network Defense:** Applying OWASP Top 10 security principles, capturing and analyzing network packets, and monitoring for suspicious activity.
+### Strategic & Compliance
+*   **Risk Management:** Applying the **CIA triad** (Confidentiality, Integrity, Availability) to risk-based decisions.
+*   **Security Frameworks:** Implementing the **NIST Cybersecurity Framework (CSF)** and organizing security responsibilities using the eight CISSP domains.
+*   **Auditing:** Recognizing physical, technical, and administrative controls and assessing compliance obligations.
+
+### Tactical & Analytical
+*   **Threat Intelligence:** Identifying attack patterns, evaluating vulnerabilities using the **OWASP Top 10**, and tracking **CVEs**.
+*   **Incident Response & Forensics:** Following incident response playbooks, understanding the incident lifecycle, and adhering to digital forensics principles like strict chain-of-custody procedures.
+*   **Network Defense:** Analyzing network architecture, hardening endpoints, and utilizing packet analysis to detect anomalies.
+
+### Technical & Engineering
+*   **Automation:** Developing robust Python scripts in VS Code to parse logs, handle files, utilize regular expressions, and automate repetitive tasks.
+*   **Data Querying:** Utilizing SQL for database management and security data extraction.
+*   **SIEM Operations:** Evaluating and building queries in SIEM platforms (Splunk, Chronicle) for log ingestion and alert generation.
 
 ---
 
-## 🛠️ Tools & Technologies
+## 🛠️ Tools & Technologies Matrix
 
 | Category | Tools & Technologies |
 | :--- | :--- |
-| **Operating Systems & IDEs** | Windows, Linux OS, VS Code |
+| **Operating Systems** | Windows, Linux OS (Ubuntu/Debian distributions) |
 | **Languages & Scripting** | Python, SQL, BASH |
 | **Network & Packet Analysis** | Wireshark, tcpdump |
-| **SIEM & IDS Logs** | Splunk, Google Chronicle, Suricata |
+| **SIEM & IDS Logging** | Splunk, Google Chronicle, Suricata |
+| **Development & Cloud** | VS Code, Git, GitHub |
 
 ---
 
-## 📂 Projects & Portfolio Activities
+## 📂 Hands-On Projects & Portfolio
 
-A collection of hands-on technical projects and portfolio activities completed to demonstrate practical competencies.
+A collection of technical projects emphasizing real-world scenarios, from log analysis to security auditing.
 
-| Course | Project Name | Description | Link |
+| Course | Project Name | Scenario / Description | Link |
 | :--- | :--- | :--- | :--- |
-| **Course 2** | Security Audit Report | Conducted a comprehensive security audit using a standard framework to identify organizational vulnerabilities and recommend mitigations. | [View Project](#) |
-| **Course 3** | Network Security Incident Analysis | Analyzed network traffic to identify signs of unauthorized access and documented findings in an incident report. | [View Project](#) |
-| **Course 4** | File Permissions & SQL Queries | Managed Linux file permissions using Bash commands and utilized SQL queries to extract security-relevant data from a database. | [View Project](#) |
-| **Course 5** | Vulnerability Assessment | Analyzed a simulated small business environment to identify attack vectors and recommend defense-in-depth strategies. | [View Project](#) |
-| **Course 6** | SIEM Log & Packet Investigation | Utilized SIEM tools to ingest and analyze log data, and performed packet capture analysis to trace an ongoing incident. | [View Project](#) |
-| **Course 7** | Python Log Parsing Automation | Developed a Python script to automate the extraction of specific IP addresses and security events from text-based log files. | [View Project](#) |
+| **Course 2** | Security Audit & Compliance Report | Conducted a comprehensive security audit of a fictional company (Botium Toys) using the NIST CSF to identify vulnerabilities and recommend mitigations. | [View Project](#) |
+| **Course 3** | Network Security Incident Analysis | Analyzed network traffic (PCAP) to identify signs of a DoS attack and documented findings in a formal incident report. | [View Project](#) |
+| **Course 4** | File Permissions & SQL Database Management | Managed Linux file permissions using Bash to secure sensitive directories, and utilized SQL queries to extract security-relevant employee data. | [View Project](#) |
+| **Course 5** | Threat Modeling & Vulnerability Assessment | Evaluated a simulated small business environment using threat modeling methodologies to identify attack vectors and recommend defense-in-depth strategies. | [View Project](#) |
+| **Course 6** | SIEM Log & Packet Investigation | Utilized Splunk and Chronicle to ingest log data, build dashboards, and trace a simulated ongoing security incident. | [View Project](#) |
+| **Course 7** | Python Log Parsing Automation | Developed a Python script to automate the extraction of flagged IP addresses and failed login attempts from raw text-based server logs. | [View Project](#) |
 
 ---
 
 ## 🧠 Key Learnings & Reflections
 
-Throughout this certification, I developed a strong foundational understanding of how to protect systems and respond to active threats. Key takeaways include:
+Throughout this certification, the transition from theoretical concepts to practical, hands-on tool usage heavily reinforced my understanding of how a Security Operations Center (SOC) functions. 
 
-*   **The CIA Triad & Defense-in-Depth:** Security is never reliant on a single barrier. Ensuring Confidentiality, Integrity, and Availability requires overlapping layers of technical, physical, and administrative controls.
-*   **Frameworks Drive Action:** The **NIST CSF** (Identify, Protect, Detect, Respond, Recover) provides a necessary structure for handling chaos during an incident, ensuring no critical steps are missed during remediation.
-*   **The Value of Automation:** Relying entirely on manual log analysis is inefficient. Utilizing Python to parse through logs, cross-reference strings, and extract data rapidly accelerates the detection pipeline—especially when dealing with large volumes of SIEM data.
-*   **Vulnerability Awareness:** Understanding the **OWASP Top 10** and monitoring **CVEs** (Common Vulnerabilities and Exposures) is critical for staying ahead of threat actors and patching systems before exploitation occurs.
+*   **Defense-in-Depth is Mandatory:** Security cannot rely on a single barrier. Ensuring Confidentiality, Integrity, and Availability requires overlapping layers of technical, physical, and administrative controls.
+*   **Frameworks Drive Order from Chaos:** The **NIST CSF** (Identify, Protect, Detect, Respond, Recover) provides a necessary, repeatable structure for handling the chaos of an active incident, ensuring no critical steps or forensic evidence are lost during remediation.
+*   **The Power of Scripting:** Relying entirely on manual log analysis is not scalable. Writing Python to parse through logs, filter strings, and extract intelligence rapidly accelerates the detection pipeline—a crucial skill when dealing with high-volume SIEM data.
+*   **The Attacker Mindset:** Participating in simulated investigations highlighted the importance of thinking like a threat actor. You cannot effectively defend a network if you do not understand the tools and methodologies used to breach it.
 
-> *"Cybersecurity isn't just about building higher walls; it's about knowing how to effectively monitor the perimeter and responding decisively when those walls are breached."*
+> *"Effective cybersecurity combines structural frameworks with the technical agility to detect, respond, and adapt to evolving threats."*
 
 ---
 *Last updated: 2026-08-13*
