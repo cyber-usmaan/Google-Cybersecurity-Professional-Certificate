@@ -6,7 +6,7 @@
 ![IDE](https://img.shields.io/badge/IDE-VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code)
 
 **Repository Objective:**
-Documenting coursework, foundational concepts, key learnings, and hands-on portfolio projects completed by M. Usman Tahir as part of the Google Cybersecurity Professional Certificate. 
+Documenting coursework, foundational concepts, key learnings, and hands-on portfolio projects completed as part of the Google Cybersecurity Professional Certificate. 
 
 ---
 
