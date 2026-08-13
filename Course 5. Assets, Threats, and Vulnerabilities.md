@@ -38,8 +38,6 @@ A good way to picture this is commuting to work by car. Driving on a road full o
 
 Threats fall into two categories, intentional (a hacker exploiting a misconfigured system) and unintentional (an employee holding the door open for a stranger). Vulnerabilities fall into two categories as well, technical (misconfigured software) and human (a lost access card). Calculating risk this way helps an organization prevent costly events, prioritize critical assets, and decide which risks it can tolerate.
 
-![Risk formula diagram placeholder](images/risk-formula.png)
-
 ---
 
 ## Asset Classification and Management
