@@ -13,7 +13,7 @@ I learned that cybersecurity is the practice of ensuring the confidentiality, in
 
 ---
 
-## Certificate
+## Certificate of completion
 
 <p align="center">
   <img src="images/Google Cert 1 Foundations of CyberSecurity-1.png" alt="Certificate placeholder" width="720"/>
