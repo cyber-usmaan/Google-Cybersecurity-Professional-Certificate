@@ -523,7 +523,7 @@ Regardless of the framework, effective threat modeling always comes back to five
 
 ---
 
-## Key Learnings and Takeaways
+## Skills Gained
 
 * Explaining and applying the relationship between risk, threats, and vulnerabilities
 * Classifying assets and understanding data ownership challenges
@@ -535,7 +535,7 @@ Regardless of the framework, effective threat modeling always comes back to five
 * Understanding and preventing SQL injection attacks
 * Applying threat modeling frameworks like STRIDE and PASTA
 
-## Summary
+## Key Learnings and Understandings
 
 * Risk equals likelihood multiplied by impact, and depends on both threats and vulnerabilities
 * Assets must be classified by sensitivity to be properly protected
