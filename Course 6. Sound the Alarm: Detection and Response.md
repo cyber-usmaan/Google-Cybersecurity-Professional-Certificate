@@ -41,7 +41,7 @@ Non security professionals also get pulled into a CSIRT when needed, since incid
 The **SOC** is a separate concept, though it sometimes overlaps with the CSIRT. A SOC is the unit responsible for continuously monitoring networks, systems, and devices. This is what people mean when they talk about the "blue team," the defenders. SOC analysts are organized in tiers based on experience.
 
 <p align="center">
-  <img src="images/SOC tiers.png" width="400"/>
+  <img src="images/SOC tiers.png" width="550"/>
 </p>
 
 - **Tier 1 (L1)**: Least experienced. They monitor alerts, prioritize them by severity, open and close tickets, and escalate anything serious.
@@ -85,7 +85,7 @@ When analyzing IDS alerts, I need to know the four detection outcomes:
 ## 3. SIEM Technology
 
 <p align="center">
-  <img src="images/SIEM data collection.png" width="400"/>
+  <img src="images/SIEM data collection.png" width="500"/>
 </p>
 
 **Security Information and Event Management (SIEM)** is one of the most important tools I studied in this course. A SIEM collects and analyzes log data to monitor activity across an entire organization. It essentially becomes the central nervous system for detection.
@@ -127,7 +127,7 @@ Once a baseline is set, I can monitor for deviations across a few areas.
 - **Temporal patterns**: watching for activity that happens outside normal hours. If a company only sees traffic during business hours and suddenly there is a large spike at 2 AM, that is off baseline and worth investigating.
 
 <p align="center">
-  <img src="images/baselining.png" width="400"/>
+  <img src="images/baselining.png" width="450"/>
 </p>
 
 I also learned the difference between a **SOC** and a **Network Operations Center (NOC)**. A SOC focuses on security, detecting and responding to threats. A NOC focuses on performance, keeping the network available and running smoothly. They are related but not the same job.
@@ -169,13 +169,13 @@ I explored two IP versions and their header fields in depth, since these fields 
 **IPv4** has thirteen header fields including Version, Internet Header Length, Type of Service, Total Length, Identification, Flags, Fragment Offset, Time to Live (TTL), Protocol, Header Checksum, Source Address, Destination Address, and Options.
 
 <p align="center">
-  <img src="images/ipv4 header data.png" width="400"/>
+  <img src="images/ipv4 header data.png" width="450"/>
 </p>
 
 **IPv6** simplifies this down to eight fields: Version, Traffic Class, Flow Label, Payload Length, Next Header, Hop Limit, Source Address, and Destination Address. IPv6 adoption keeps growing mainly because of its much larger address space.
 
 <p align="center">
-  <img src="images/ipv6 header data.png" width="400"/>
+  <img src="images/ipv6 header data.png" width="450"/>
 </p>
 
 **Wireshark** is an open source protocol analyzer with a graphical interface, which makes it much easier to visually inspect traffic compared to a pure command line tool.
@@ -247,7 +247,7 @@ sudo tcpdump -r packetcapture.pcap -n 'ip and (port 80 or port 443)'
 Reading tcpdump output means recognizing five key parts on each line: the **timestamp**, **source IP**, **source port**, **destination IP**, and **destination port**, followed by additional protocol details.
 
 <p align="center">
-  <img src="images/tcp dump.png" width="400"/>
+  <img src="images/tcp dump.png" width="600"/>
 </p>
 
 **Lab practice:** I used `sudo ifconfig` and `sudo tcpdump -D` to identify available network interfaces, then captured live traffic on the correct interface, saved it to a file with `-w`, and filtered the saved capture afterward using expressions and the `-n` flag to keep output clean and readable.
@@ -302,7 +302,7 @@ It is worth remembering that an IoC does not automatically confirm a security in
 The **Pyramid of Pain**, created by security researcher David J. Bianco, is the concept I found most memorable in this entire course. It ranks IoCs by how much difficulty they cause an attacker when defenders block them.
 
 <p align="center">
-  <img src="images/pyramid of pain.png" width="400"/>
+  <img src="images/pyramid of pain.png" width="550"/>
 </p>
 
 From easiest to hardest for an attacker to work around:
@@ -399,7 +399,7 @@ Resilience is not something you build during a crisis, it has to be planned and 
 The final phase of the NIST Incident Response Lifecycle is **Post Incident Activity**, the process of reviewing an incident to find areas for improvement. I learned that closing an incident is not the end of the work, it is actually where a lot of long term value gets created.
 
 <p align="center">
-  <img src="images/post-incident process.png" width="400"/>
+  <img src="images/post-incident process.png" width="550"/>
 </p>
 
 The **lessons learned meeting**, also called a post mortem, brings together everyone involved after a major incident. Its purpose is to evaluate what happened and identify improvements, never to assign blame. This meeting should happen no later than two weeks after the incident is resolved. Not every incident needs its own dedicated meeting, but major ones like ransomware attacks definitely should get one.
@@ -496,13 +496,13 @@ IDS technology can be deployed in two different locations, and each gives a diff
 **Host-based Intrusion Detection System (HIDS)** is installed as an agent directly on a single endpoint. It monitors internal activity on that specific host, things like unauthorized applications, file system changes, and unusual user activity.
 
 <p align="center">
-  <img src="images/HIDS.png" width="400"/>
+  <img src="images/HIDS.png" width="500"/>
 </p>
 
 **Network-based Intrusion Detection System (NIDS)** is installed at specific points in the network and inspects traffic flowing between multiple devices rather than watching just one host.
 
 <p align="center">
-  <img src="images/NIDS.png" width="400"/>
+  <img src="images/NIDS.png" width="500"/>
 </p>
 
 Using both together gives a layered, more complete view of an environment since each one sees something the other cannot.
