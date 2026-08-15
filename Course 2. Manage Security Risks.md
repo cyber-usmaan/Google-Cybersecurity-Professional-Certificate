@@ -13,7 +13,7 @@ This is the second course of the Google Cybersecurity Certificate. Building on t
 
 ---
 
-## Certificate
+## Certificate of Completion
 
 <p align="center">
   <img src="images/Google Cert 2 Manage Security Risks.png" alt="Certificate placeholder" width="720"/>
@@ -172,7 +172,7 @@ A **playbook** is a manual that defines the steps a team follows for a specific 
 - Comparing open-source and proprietary security tools
 - Using playbooks alongside SIEM and SOAR tools
 
-## Key Learnings and Reflections
+## Key Learnings and Understanding
 
 This course shifted my focus from vocabulary to structure. How the pieces I learned in Course 1 actually fit into an organization's day-to-day risk management. A few things stood out to me:
 
