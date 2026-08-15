@@ -1,41 +1,32 @@
-# Sound the Alarm: Detection and Response
+# Course 6: Sound the Alarm: Detection and Response
 
-**Course 6 of the Google Cybersecurity Professional Certificate**
+![Course](https://img.shields.io/badge/Incident%20Response%20Lifecycle-4285F4)
+![Course](https://img.shields.io/badge/Network%20Traffic%20and%20Packet%20Analysis-4285F4)
+![Course](https://img.shields.io/badge/Incident%20Investigation%20and%20Artifacts-4285F4)
+![Course](https://img.shields.io/badge/IDS%20and%20SIEM%20Tools-4285F4)
+![Status](https://img.shields.io/badge/Status-Completed-4EEB2A)
 
-This is my personal summary and portfolio writeup for the sixth course in the program. I completed this course as part of my journey into cybersecurity, and this document captures what I learned, how the pieces connect, and why each concept matters in real security work. I wrote it in my own words to prove my understanding and to use it later as a quick revision guide.
+## About Course
+
+This course tied together everything from earlier parts of the certificate and pushed it into the operational side of security work, actually detecting and responding to threats rather than just understanding concepts in theory. I moved from learning who does what in an incident response team, to reading raw packets byte by byte, to writing custom detection rules in Suricata, to understanding how a full incident gets closed out with a lessons learned meeting and a final report.
+
+---
+
+## Certificate of completion:
+
+<p align="center">
+  <img src="images/Google Cert 6 Sound the Alarm - Dectection and Response_page_1.png" alt="Certificate placeholder" width="720"/>
+</p>
 
 ---
 
-## Table of Contents
-
-1. [Roles in Incident Response Teams](#1-roles-in-incident-response-teams)
-2. [Detection Tools: IDS, IPS, and EDR](#2-detection-tools-ids-ips-and-edr)
-3. [SIEM Technology](#3-siem-technology)
-4. [Network Monitoring and Baselines](#4-network-monitoring-and-baselines)
-5. [Packet Captures and Network Protocol Analyzers](#5-packet-captures-and-network-protocol-analyzers)
-6. [Investigating Packets with Wireshark](#6-investigating-packets-with-wireshark)
-7. [Capturing Packets with tcpdump](#7-capturing-packets-with-tcpdump)
-8. [Detection Methods](#8-detection-methods)
-9. [Monitoring CI/CD Pipelines](#9-monitoring-cicd-pipelines)
-10. [Indicators of Compromise and the Pyramid of Pain](#10-indicators-of-compromise-and-the-pyramid-of-pain)
-11. [Documentation Best Practices](#11-documentation-best-practices)
-12. [The Triage Process](#12-the-triage-process)
-13. [Business Continuity Planning](#13-business-continuity-planning)
-14. [Post Incident Review](#14-post-incident-review)
-15. [Logs and Log Management](#15-logs-and-log-management)
-16. [Log File Formats](#16-log-file-formats)
-17. [IDS Types and Detection Techniques](#17-ids-types-and-detection-techniques)
-18. [Suricata](#18-suricata)
-19. [SIEM Log Ingestion and Search Methods](#19-siem-log-ingestion-and-search-methods)
-20. [Conclusion](#conclusion)
-21. [Skills Gained](#skills-gained)
-22. [Summary](#summary)
-
----
+# What I learned
 
 ## 1. Roles in Incident Response Teams
 
-Every incident response effort needs structure, otherwise chaos takes over during an attack. I learned that organizations rely on a **Computer Security Incident Response Team (CSIRT)** and a **Security Operations Center (SOC)** to bring that structure. A CSIRT is a specialized group trained specifically for incident management. It can be a permanent team or a task force that only comes together when an incident happens. Effective response depends on three things working together: command (leadership and direction), control (managing technical resources), and communication (keeping everyone informed).
+Every incident response effort needs structure, otherwise chaos takes over during an attack. I learned that organizations rely on a **Computer Security Incident Response Team (CSIRT)** and a **Security Operations Center (SOC)** to bring that structure. 
+
+A CSIRT is a specialized group trained specifically for incident management. It can be a permanent team or a task force that only comes together when an incident happens. Effective response depends on three things working together: command (leadership and direction), control (managing technical resources), and communication (keeping everyone informed).
 
 Inside a CSIRT there are usually three core security roles.
 
@@ -58,15 +49,13 @@ The **SOC** is a separate concept, though it sometimes overlaps with the CSIRT. 
 
 A SOC can also include specialized roles like **forensic investigators** (who collect and preserve digital evidence) and **threat hunters** (who proactively search for hidden threats using intelligence).
 
-**My takeaway:** Knowing this hierarchy is not just trivia. During a real incident, understanding who to escalate to and what their responsibility is saves critical time. It also tells me where I could grow in my own career, from L1 analyst toward more advanced specializations like threat hunting or forensics.
-
 ---
 
 ## 2. Detection Tools: IDS, IPS, and EDR
 
 Detection tools exist because organizations cannot protect what they cannot see. I like comparing them to a home security system, they watch for something unusual and raise an alarm.
 
-There are three tools I need to clearly distinguish, since they get confused often.
+There are three tools needed to be clearly distinguished, since they get confused often.
 
 | Capability | IDS | IPS | EDR |
 |---|---|---|---|
@@ -76,7 +65,7 @@ There are three tools I need to clearly distinguish, since they get confused oft
 | Generates alerts | Yes | Yes | Yes |
 | Performs behavioral analysis | No | No | Yes |
 
-**Intrusion Detection System (IDS)** only watches and alerts. It never blocks anything on its own. For example, if an unknown IP logs into a system at 3 AM, the IDS raises an alert, but a human or another tool has to act on it. Common tools here are Zeek, Suricata, Snort, and Sagan.
+**Intrusion Detection System (IDS)** only watches and alerts. It never blocks anything on its own. Common tools here are Zeek, Suricata, Snort, and Sagan.
 
 When analyzing IDS alerts, I need to know the four detection outcomes:
 
@@ -88,8 +77,6 @@ When analyzing IDS alerts, I need to know the four detection outcomes:
 **Intrusion Prevention System (IPS)** does everything an IDS does, but it also takes action. For example, it can automatically update a router's access control list to block malicious traffic. Many tools like Suricata and Snort can run in either IDS or IPS mode.
 
 **Endpoint Detection and Response (EDR)** is installed directly on endpoints, meaning any device connected to the network like a laptop or phone. What makes EDR different is behavioral analysis. It uses machine learning to study normal patterns on an endpoint, and if something breaks that pattern, like an unusual process suddenly starting up, it can automatically stop it without a human stepping in. Examples include Open EDR, Bitdefender EDR, and FortiEDR.
-
-**My takeaway:** IDS is the watchdog that barks, IPS is the watchdog that also bites, and EDR is a much smarter guard that lives specifically on the endpoint and can act on its own using behavior patterns rather than just fixed rules.
 
 ---
 
@@ -119,8 +106,6 @@ Once the data is collected and normalized, the SIEM applies detection rules to i
 
 Common SIEM tools in the industry include Splunk, Chronicle (Google Security Operations), Elastic, Exabeam, IBM QRadar, LogRhythm, and AlienVault OSSIM.
 
-**My takeaway:** The SIEM is where raw noise becomes usable signal. Without collection, normalization, and analysis working together, an analyst would be stuck manually digging through dozens of separate systems, which simply is not realistic at scale.
-
 ---
 
 ## 4. Network Monitoring and Baselines
@@ -128,8 +113,6 @@ Common SIEM tools in the industry include Splunk, Chronicle (Google Security Ope
 Networks generate constant traffic just from ordinary activity, sending an email, streaming a video, browsing a site. This is called **network traffic** (the amount of data moving) and **network data** (the actual data being transmitted).
 
 To detect anything abnormal, I first need to know what normal looks like. This is the idea of a **baseline**, a reference point for expected behavior. I compared it to tracking a personal budget: once I know my normal spending pattern, an unusual spike stands out immediately. In security, the same logic applies to network traffic.
-
-![Baseline graph example]
 
 Once a baseline is set, I can monitor for deviations across a few areas.
 
@@ -141,7 +124,7 @@ I also learned the difference between a **SOC** and a **Network Operations Cente
 
 Common network monitoring tools include IDS (for automated alerting) and network protocol analyzers like tcpdump and Wireshark (for manual, detailed inspection).
 
-**My takeaway:** Baselines are the foundation for almost everything downstream in detection. Without knowing normal, I cannot recognize abnormal, which is really the whole point of monitoring.
+Baselines are the foundation for almost everything downstream in detection. Without knowing normal, I cannot recognize abnormal, which is really the whole point of monitoring.
 
 ---
 
@@ -166,8 +149,6 @@ A **packet capture (p-cap)** is simply a saved file of intercepted packets, whic
 - **WinPcap**: an older Windows format, mostly outdated now.
 - **Npcap**: built by Nmap, commonly used on modern Windows systems.
 - **PCAPng**: the modern "next generation" format that can capture and store data simultaneously.
-
-**My takeaway:** Packet analysis feels like reading the network's diary. Once I understood that packets always follow this header, payload, footer structure, filtering and searching through them in Wireshark made a lot more sense.
 
 ---
 
@@ -197,13 +178,13 @@ I can combine filters using **and**, **or**, and use parentheses to group and pr
 Some filter examples I practiced:
 
 ```
-ip.addr == 172.21.224.2        # any packet with this IP as source or destination
-ip.src == 10.10.10.10          # only packets from this source IP
+ip.addr == 172.21.224.2         # any packet with this IP as source or destination
+ip.src == 10.10.10.10           # only packets from this source IP
 ip.dst == 4.4.4.4               # only packets to this destination IP
 eth.addr == 00:70:f4:23:18:c4   # filter by MAC address
 udp.port == 53                  # filter DNS traffic over UDP
 tcp.port == 25                  # filter mail traffic over TCP
-dns                              # simple protocol filter
+dns                             # simple protocol filter
 ```
 
 The **contains** operator finds an exact string match inside a packet, for example searching HTTP traffic for the word "moved." The **matches** operator lets me filter using a regular expression pattern instead of a fixed string.
@@ -211,8 +192,6 @@ The **contains** operator finds an exact string match inside a packet, for examp
 Wireshark also lets me **follow a stream**, meaning it reassembles an entire back and forth conversation between two devices into something readable, which is very useful for reviewing a full HTTP request and response exchange.
 
 **Lab practice:** In the hands on lab, I opened a saved packet capture, applied IP address and MAC address filters to isolate a browsing session, and drilled into DNS query and answer records to confirm which IP address a domain resolved to. I also filtered TCP port 80 traffic and read frame details like Time to Live and header length directly from the packet inspection panel.
-
-**My takeaway:** Filters are the real skill here. Anyone can open Wireshark and see a wall of packets, but knowing how to narrow that wall down to exactly the traffic that matters is what separates a useful investigation from wasted time.
 
 ---
 
@@ -251,8 +230,6 @@ Reading tcpdump output means recognizing five key parts on each line: the **time
 
 **Lab practice:** I used `sudo ifconfig` and `sudo tcpdump -D` to identify available network interfaces, then captured live traffic on the correct interface, saved it to a file with `-w`, and filtered the saved capture afterward using expressions and the `-n` flag to keep output clean and readable.
 
-**My takeaway:** tcpdump feels less friendly than Wireshark at first, but it is faster for quick checks on a server where there is no graphical interface available, which is a very common real world scenario for a security analyst working remotely on Linux systems.
-
 ---
 
 ## 8. Detection Methods
@@ -271,7 +248,7 @@ Organizations often manage all of this through a **Threat Intelligence Platform 
 
 **Cyber deception** is my favorite concept from this section. It deliberately tricks attackers to catch them in the act. The classic example is a **honeypot**, a fake, vulnerable looking resource meant to attract intruders. For instance, a fake file labeled "Client Credit Card Information 2022" could lure an attacker in, and the moment they touch it, security teams get alerted.
 
-**My takeaway:** No single detection tool can keep up with every evolving threat. Threat hunting, intelligence sharing, and deception each cover a gap that automated rules alone cannot.
+No single detection tool can keep up with every evolving threat. Threat hunting, intelligence sharing, and deception each cover a gap that automated rules alone cannot.
 
 ---
 
@@ -316,7 +293,7 @@ From easiest to hardest for an attacker to work around:
 
 **Lab practice:** In the file hash investigation activity, I used a VirusTotal report to confirm a file was malware based on community score and vendor detections, then extracted multiple IoC types from the same report, a domain name, an associated IP address, an MD5 hash, host and network artifacts like HTTP requests to that domain, the tool used for input capture, and command and control listed as the TTP.
 
-**My takeaway:** The Pyramid of Pain reframes how I prioritize detection work. Blocking a single IP is a quick win but has almost no lasting impact. Detecting TTPs is much harder to build, but it forces the attacker to fundamentally change their approach, which is a far bigger win for defenders.
+The Pyramid of Pain reframes how to prioritize detection work. Blocking a single IP is a quick win but has almost no lasting impact. Detecting TTPs is much harder to build, but it forces the attacker to fundamentally change their approach, which is a far bigger win for defenders.
 
 ---
 
@@ -336,7 +313,7 @@ The best practice guidelines I want to remember going forward:
 - **Be concise**: establish the purpose right away. An executive summary at the start of a report should be short enough to skim quickly.
 - **Update regularly**: the threat landscape keeps shifting, so documentation, especially incident response plans, needs to be reviewed and revised after every major incident.
 
-**My takeaway:** Documentation is not paperwork for its own sake, it directly protects the organization legally, keeps the team consistent under pressure, and speeds up onboarding for new analysts.
+Documentation is not paperwork for its own sake, it directly protects the organization legally, keeps the team consistent under pressure, and speeds up onboarding for new analysts.
 
 ---
 
@@ -369,7 +346,7 @@ The analyst gathers evidence, does external research, and documents the investig
 
 Triage delivers two clear benefits: **resource management** (focus stays on urgent threats instead of wasting time on low priority tasks) and a **standardized approach** (playbooks ensure alerts get properly validated before moving further up the chain).
 
-**My takeaway:** Triage is what keeps a security team from drowning in alert fatigue. Without prioritization, every alert would demand equal attention, and the truly dangerous incidents could easily get lost in the noise.
+Triage is what keeps a security team from drowning in alert fatigue. Without prioritization, every alert would demand equal attention, and the truly dangerous incidents could easily get lost in the noise.
 
 ---
 
@@ -389,7 +366,7 @@ I found the healthcare example particularly striking. A ransomware attack on a h
 | Warm site | Fully configured but not immediately live, can be made operational quickly |
 | Cold site | Has some infrastructure in place but needs significant work before use |
 
-**My takeaway:** Resilience is not something you build during a crisis, it has to be planned and tested in advance. The gap between a hot site and a cold site is really a gap in how much money and effort an organization is willing to invest in advance versus how much downtime it can tolerate.
+Resilience is not something you build during a crisis, it has to be planned and tested in advance. The gap between a hot site and a cold site is really a gap in how much money and effort an organization is willing to invest in advance versus how much downtime it can tolerate.
 
 ---
 
@@ -420,8 +397,6 @@ The **final report** is one of the most important documents created at this stag
 - **Investigation**: details of the detection and analysis work, for example packet capture analysis findings.
 - **Recommendations**: suggested actions for future prevention.
 
-**My takeaway:** Every incident is a learning opportunity, and if the lessons never get written down and acted on, the organization is likely to face the exact same problem again.
-
 ---
 
 ## 15. Logs and Log Management
@@ -446,8 +421,6 @@ A basic log entry usually contains a date, time, location, action, and the autho
 - **Avoiding overlogging**: logging everything sounds safer but is actually one of the most common mistakes organizations make. It increases storage costs, adds performance strain, and makes it harder to find the events that actually matter.
 - **Log retention**: some industries have regulatory requirements for how long logs must be kept, for example FISMA for the public sector, HIPAA for healthcare, and PCI DSS, GLBA, and SOX for financial services.
 - **Log protection**: attackers sometimes modify logs to hide their tracks. Storing logs on a centralized log server, rather than locally on the device that generated them, creates a barrier that makes it harder for an attacker to tamper with the evidence.
-
-**My takeaway:** More logging is not automatically better logging. The goal is capturing the right data, protecting it, and keeping it for the right amount of time, not just collecting everything possible.
 
 ---
 
@@ -486,7 +459,7 @@ CEF:Version|Device Vendor|Device Product|Device Version|Signature ID|Name|Severi
 
 Fields are separated by the pipe character `|`, while the Extension field itself uses key-value pairs. When Syslog transports a CEF message, a timestamp and hostname get prepended to the front.
 
-**My takeaway:** There is no single universal log format. Learning to read all of these means I can pull meaningful information out of almost any log source I encounter, regardless of which vendor or system produced it.
+There is no single universal log format. Learning to read all of these means I can pull meaningful information out of almost any log source I encounter, regardless of which vendor or system produced it.
 
 ---
 
@@ -512,7 +485,7 @@ There are also two core detection techniques worth comparing directly.
 
 A **zero-day** attack is an exploit that was previously unknown, which is exactly the category signature-based detection cannot catch, since there is no existing signature for it yet.
 
-**My takeaway:** Neither technique alone is enough. Signature-based catches known threats efficiently but misses anything new, while anomaly-based can catch new threats but generates a lot of noise. Real environments generally need both working together.
+Neither technique alone is enough. Signature-based catches known threats efficiently but misses anything new, while anomaly-based can catch new threats but generates a lot of noise. Real environments generally need both working together.
 
 ---
 
@@ -599,32 +572,21 @@ Chronicle offers two distinct search types.
 ## Skills Gained
 
 - Understanding CSIRT and SOC organizational structure and escalation paths
-- Comparing and selecting between IDS, IPS, and EDR detection tools
 - Building and interpreting the SIEM data pipeline: collection, normalization, and analysis
 - Establishing network baselines and detecting deviations through flow, payload, and temporal analysis
 - Capturing and filtering network traffic using Wireshark and tcpdump
-- Reading and interpreting IPv4 and IPv6 packet headers
-- Applying threat hunting, threat intelligence, and cyber deception concepts
-- Monitoring CI/CD pipelines for indicators of compromise
-- Classifying and prioritizing indicators of compromise using the Pyramid of Pain
 - Writing clear, audience aware incident documentation
 - Executing the triage process to prioritize incidents by impact and recoverability
-- Understanding business continuity planning and site resilience strategies
 - Conducting post incident reviews and writing final incident reports
 - Managing log collection, retention, and protection practices
 - Reading JSON, Syslog, XML, CSV, and CEF log formats
-- Comparing signature-based and anomaly-based detection techniques
-- Configuring and writing custom rules in Suricata
-- Searching SIEM platforms using Splunk SPL and Google SecOps UDM/Raw Log search
 
-## Summary
+## Key Learnings and Reflections
 
-- Incident response relies on structured teams (CSIRT, SOC) with clear roles across tiers
 - IDS detects, IPS detects and blocks, EDR adds behavioral analysis on endpoints
 - SIEM tools collect, normalize, and analyze logs from across an organization
 - Baselines define "normal" so deviations can be detected in network traffic
 - Packets have headers, payloads, and footers, and tools like Wireshark and tcpdump let analysts capture and filter them
-- Threat hunting, threat intelligence, and honeypots extend detection beyond automated tools
 - CI/CD pipelines need active monitoring for indicators of compromise
 - IoCs prove something already happened, IoAs reveal attacker behavior in real time
 - The Pyramid of Pain ranks IoCs by how disruptive it is for the attacker when blocked
@@ -632,7 +594,6 @@ Chronicle offers two distinct search types.
 - Triage prioritizes incidents by functional impact, information impact, and recoverability
 - Business continuity plans keep operations running through major disruptions
 - Post incident reviews close the loop with lessons learned meetings and final reports
-- Logs come in several formats (JSON, Syslog, XML, CSV, CEF) and need careful management
 - HIDS watches a single host, NIDS watches network traffic, and detection uses signature or anomaly based techniques
 - Suricata combines IDS, IPS, and monitoring capabilities with customizable rules
 - SIEM platforms like Splunk and Chronicle each have their own search syntax for finding relevant events
@@ -640,7 +601,5 @@ Chronicle offers two distinct search types.
 ---
 
 ## Conclusion
-
-This course tied together everything from earlier parts of the certificate and pushed it into the operational side of security work, actually detecting and responding to threats rather than just understanding concepts in theory. I moved from learning who does what in an incident response team, to reading raw packets byte by byte, to writing custom detection rules in Suricata, to understanding how a full incident gets closed out with a lessons learned meeting and a final report.
 
 The single idea that stuck with me the most is the Pyramid of Pain. It changed how I think about detection priorities, because it reframed the goal from simply "block the bad thing" to "make it as painful as possible for the attacker to keep attacking." That shift in mindset feels like the real difference between checkbox security and genuinely effective defense.
