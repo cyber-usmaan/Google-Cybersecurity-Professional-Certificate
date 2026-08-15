@@ -10,7 +10,7 @@ This course introduced me to two tools that form the backbone of daily work for 
 
 ---
 
-## Certificate
+## Certificate of completion
 
 <p align="center">
   <img src="images/Google Cert 4 Tools of Trade - Linux and SQL.png" alt="Certificate placeholder" width="720"/>
