@@ -12,6 +12,10 @@ A comprehensive compilation of coursework, foundational concepts, key learnings,
 
 ## Certifications & Badges
 
+<p align="center">
+  <img src="images/GOOGLE CYBERSECURITY CERT_page_1.png" alt="Certificate placeholder" width="720"/>
+</p>
+
 *   **Date of Completetion**: 13th August, 2026
 *   **Google Cybersecurity Certificate:** [Link to Coursera Certificate](http://coursera.org/account/accomplishments/professional-cert/2M54S1KOFFZG)
 *   **Credly Badge:** [Link to Digital Badge](https://www.credly.com/badges/5ad0485c-9e88-4010-b4e4-955bd9d91483/public_url)
