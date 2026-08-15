@@ -40,7 +40,9 @@ Non security professionals also get pulled into a CSIRT when needed, since incid
 
 The **SOC** is a separate concept, though it sometimes overlaps with the CSIRT. A SOC is the unit responsible for continuously monitoring networks, systems, and devices. This is what people mean when they talk about the "blue team," the defenders. SOC analysts are organized in tiers based on experience.
 
-![SOC tier structure diagram]
+<p align="center">
+  <img src="images/SOC tiers.png" width="400"/>
+</p>
 
 - **Tier 1 (L1)**: Least experienced. They monitor alerts, prioritize them by severity, open and close tickets, and escalate anything serious.
 - **Tier 2 (L2)**: More experienced. They pick up escalated tickets, dig deeper, tune detection tools, and report to the SOC Lead.
@@ -82,6 +84,10 @@ When analyzing IDS alerts, I need to know the four detection outcomes:
 
 ## 3. SIEM Technology
 
+<p align="center">
+  <img src="images/SIEM data collection.png" width="400"/>
+</p>
+
 **Security Information and Event Management (SIEM)** is one of the most important tools I studied in this course. A SIEM collects and analyzes log data to monitor activity across an entire organization. It essentially becomes the central nervous system for detection.
 
 SIEM tools bring three main advantages.
@@ -119,6 +125,10 @@ Once a baseline is set, I can monitor for deviations across a few areas.
 - **Flow analysis**: looking at how packets move across ports and protocols. Malicious actors sometimes use uncommon port and protocol combinations to maintain **command and control (C2)** communication with a compromised system, for example running HTTPS traffic over port 8088 instead of the standard port 443.
 - **Packet payload information**: examining the actual data inside packets. This can reveal data exfiltration if sensitive information is leaving the network unexpectedly.
 - **Temporal patterns**: watching for activity that happens outside normal hours. If a company only sees traffic during business hours and suddenly there is a large spike at 2 AM, that is off baseline and worth investigating.
+
+<p align="center">
+  <img src="images/baselining.png" width="400"/>
+</p>
 
 I also learned the difference between a **SOC** and a **Network Operations Center (NOC)**. A SOC focuses on security, detecting and responding to threats. A NOC focuses on performance, keeping the network available and running smoothly. They are related but not the same job.
 
@@ -158,7 +168,15 @@ I explored two IP versions and their header fields in depth, since these fields 
 
 **IPv4** has thirteen header fields including Version, Internet Header Length, Type of Service, Total Length, Identification, Flags, Fragment Offset, Time to Live (TTL), Protocol, Header Checksum, Source Address, Destination Address, and Options.
 
+<p align="center">
+  <img src="images/ipv4 header data.png" width="400"/>
+</p>
+
 **IPv6** simplifies this down to eight fields: Version, Traffic Class, Flow Label, Payload Length, Next Header, Hop Limit, Source Address, and Destination Address. IPv6 adoption keeps growing mainly because of its much larger address space.
+
+<p align="center">
+  <img src="images/ipv6 header data.png" width="400"/>
+</p>
 
 **Wireshark** is an open source protocol analyzer with a graphical interface, which makes it much easier to visually inspect traffic compared to a pure command line tool.
 
@@ -228,6 +246,10 @@ sudo tcpdump -r packetcapture.pcap -n 'ip and (port 80 or port 443)'
 
 Reading tcpdump output means recognizing five key parts on each line: the **timestamp**, **source IP**, **source port**, **destination IP**, and **destination port**, followed by additional protocol details.
 
+<p align="center">
+  <img src="images/tcp dump.png" width="400"/>
+</p>
+
 **Lab practice:** I used `sudo ifconfig` and `sudo tcpdump -D` to identify available network interfaces, then captured live traffic on the correct interface, saved it to a file with `-w`, and filtered the saved capture afterward using expressions and the `-n` flag to keep output clean and readable.
 
 ---
@@ -265,7 +287,7 @@ Common **Indicators of Compromise (IoCs)** to watch for inside a pipeline includ
 
 **Continuous vulnerability scanning** is a key defensive practice here. Regularly checking CI/CD infrastructure, plugins, and containers for known **Common Vulnerabilities and Exposures (CVEs)** helps find weak points before an attacker does. These vulnerabilities are themselves IoCs, since they mark exactly where a compromise is most likely to happen.
 
-**My takeaway:** Security teams cannot treat the development pipeline as a black box outside their responsibility. It is part of the attack surface just like any server or endpoint, and automating threat detection there is what allows teams to ship quickly without sacrificing safety.
+Security teams cannot treat the development pipeline as a black box outside their responsibility. It is part of the attack surface just like any server or endpoint, and automating threat detection there is what allows teams to ship quickly without sacrificing safety.
 
 ---
 
@@ -279,7 +301,9 @@ It is worth remembering that an IoC does not automatically confirm a security in
 
 The **Pyramid of Pain**, created by security researcher David J. Bianco, is the concept I found most memorable in this entire course. It ranks IoCs by how much difficulty they cause an attacker when defenders block them.
 
-![Pyramid of Pain diagram]
+<p align="center">
+  <img src="images/pyramid of pain.png" width="400"/>
+</p>
 
 From easiest to hardest for an attacker to work around:
 
@@ -374,7 +398,9 @@ Resilience is not something you build during a crisis, it has to be planned and 
 
 The final phase of the NIST Incident Response Lifecycle is **Post Incident Activity**, the process of reviewing an incident to find areas for improvement. I learned that closing an incident is not the end of the work, it is actually where a lot of long term value gets created.
 
-![NIST Incident Response Lifecycle phases]
+<p align="center">
+  <img src="images/post-incident process.png" width="400"/>
+</p>
 
 The **lessons learned meeting**, also called a post mortem, brings together everyone involved after a major incident. Its purpose is to evaluate what happened and identify improvements, never to assign blame. This meeting should happen no later than two weeks after the incident is resolved. Not every incident needs its own dedicated meeting, but major ones like ransomware attacks definitely should get one.
 
@@ -469,9 +495,15 @@ IDS technology can be deployed in two different locations, and each gives a diff
 
 **Host-based Intrusion Detection System (HIDS)** is installed as an agent directly on a single endpoint. It monitors internal activity on that specific host, things like unauthorized applications, file system changes, and unusual user activity.
 
+<p align="center">
+  <img src="images/HIDS.png" width="400"/>
+</p>
+
 **Network-based Intrusion Detection System (NIDS)** is installed at specific points in the network and inspects traffic flowing between multiple devices rather than watching just one host.
 
-![HIDS vs NIDS network diagrams]
+<p align="center">
+  <img src="images/NIDS.png" width="400"/>
+</p>
 
 Using both together gives a layered, more complete view of an environment since each one sees something the other cannot.
 
@@ -564,8 +596,6 @@ Chronicle offers two distinct search types.
 
 - **UDM Search (Unified Data Model)**: the default search type, working against data that has already been ingested, parsed, and normalized. It is faster because it searches structured, indexed data. UDM events always include common fields like **entities** (nouns describing devices, users, or processes involved), **event metadata** (basic description and timestamps), **network metadata** (protocol details), and **security results** (the outcome, like "virus detected and quarantined"). A simple example search: `metadata.event_type = "USER_LOGIN"`.
 - **Raw Log Search**: searches through raw, unparsed logs when the normalized data does not have what I need. It takes longer since it is not searching structured indexed data, but it supports regular expressions for more precise pattern matching.
-
-**My takeaway:** Every SIEM tool has its own search language, but the underlying logic stays consistent: filter, refine, and transform. Once I understood Splunk's pipe-based chaining, picking up the logic behind Chronicle's UDM versus Raw Log search felt much more natural.
 
 ---
 
