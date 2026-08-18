@@ -67,7 +67,7 @@ Below is the writeup for each course in the certificate, along with its module b
 *   **Module 4:** Databases and SQL
 
 ### 5. Assets, Threats, and Vulnerabilities
-[Visit Course 5 writeup and Certificate](https://github.com/cyber-usmaan/Google-Cybersecurity-Professional-Certificate/blob/main/Course%205.%20Assets%20Threats%20and%20Vulnerabilities.md)
+[Visit Course 5 writeup and Certificate](https://github.com/cyber-usmaan/Google-Cybersecurity-Professional-Certificate/blob/main/Course%205.%20Assets%2C%20Threats%2C%20and%20Vulnerabilities.md)
 *   **Module 1:** Introduction to Assets, Threats, and Vulnerabilities
 *   **Module 2:** Protect Organizational Assets (Security Controls & Cryptography)
 *   **Module 3:** Vulnerabilities in Systems
