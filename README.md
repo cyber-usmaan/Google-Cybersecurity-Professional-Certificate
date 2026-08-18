@@ -74,14 +74,14 @@ Below is the writeup for each course in the certificate, along with its module b
 *   **Module 4:** Threat Modeling and the Attacker Mindset
 
 ### 6. Sound the Alarm: Detection and Response
-[Visit Course 6 writeup and Certificate](https://github.com/cyber-usmaan/Google-Cybersecurity-Professional-Certificate/blob/main/Course%206.%20Detection%20and%20Response.md)
+[Visit Course 6 writeup and Certificate](https://github.com/cyber-usmaan/Google-Cybersecurity-Professional-Certificate/blob/main/Course%206.%20Sound%20the%20Alarm%3A%20Detection%20and%20Response.md)
 *   **Module 1:** Incident Response Lifecycle
 *   **Module 2:** Network Traffic and Packet Analysis
 *   **Module 3:** Incident Investigation and Artifacts
 *   **Module 4:** Intrusion Detection Systems (IDS) and SIEM Tools
 
 ### 7. Automate Cybersecurity Tasks with Python
-[Visit Course 7 writeup and Certificate](https://github.com/cyber-usmaan/Google-Cybersecurity-Professional-Certificate/blob/main/Course%207.%20Automate%20Tasks%20with%20Python.md)
+[Visit Course 7 writeup and Certificate](https://github.com/cyber-usmaan/Google-Cybersecurity-Professional-Certificate/blob/main/Course%207.%20Automate%20Cybersecurity%20Tasks%20with%20Python.md)
 *   **Module 1:** Introduction to Python for Cybersecurity
 *   **Module 2:** Write Effective Python Code (Functions & Modules)
 *   **Module 3:** Work with Strings and Lists
