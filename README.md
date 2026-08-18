@@ -88,7 +88,7 @@ Below is the writeup for each course in the certificate, along with its module b
 *   **Module 4:** File Parsing, Regex, and Debugging
 
 ### 8. Put It to Work: Prepare for Cybersecurity Jobs
-[Visit Course 8 writeup and Certificate](https://github.com/cyber-usmaan/Google-Cybersecurity-Professional-Certificate/blob/main/Course%208.%20Prepare%20for%20Cybersecurity%20Jobs.md)
+[Visit Course 8 writeup and Certificate](https://github.com/cyber-usmaan/Google-Cybersecurity-Professional-Certificate/blob/main/Course%208.%20Put%20It%20to%20Work%3A%20Prepare%20for%20Cybersecurity%20Jobs.md)
 *   **Module 1:** Incident Classification and Escalation
 *   **Module 2:** Communication with Stakeholders
 *   **Module 3:** Engage with the Cybersecurity Community
